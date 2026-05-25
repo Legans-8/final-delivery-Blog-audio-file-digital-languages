@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var audio = document.getElementById("myAudio");
     if (audio) {
-        audio.volume = 0.3;
+        audio.volume = 0.1;
     }    
 });
 
