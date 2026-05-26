@@ -837,9 +837,33 @@ h2 {
     padding: 2px 6px;
 }
 
-/* ========================================= */
-/* SISTEMA DE ARCHIVO SONORO (DESDE CERO)     */
-/* ========================================= */
+/* archivo sonoro*/
+
+.wrapper-sonoro {
+    margin-top: 20px;
+}
+
+.header-sonoro {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.main-sonoro {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.titulo-principal-sonoro {
+    margin-bottom: 10px;
+}
+
+.descripcion-sonora {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
 
 .retro-folder-title {
     background: var(--text-color);
@@ -867,7 +891,53 @@ h2 {
     text-transform: uppercase;
 }
 
-/* Flexbox para poner imagen y patrón lado a lado */
+.folder-uni {
+    background-color: #0b4a18 !important; 
+    color: #ffffff !important;
+}
+.header-uni {
+    background-color: #0b4a18 !important;
+    color: #ffffff !important;
+}
+
+.folder-ext {
+    background-color: #8b0000 !important; 
+    color: #ffffff !important;
+}
+
+.header-ext {
+    background-color: #8b0000 !important;
+    color: #ffffff !important;
+}
+
+.seccion-cuerpo {
+    margin-top: 40px;
+}
+
+.folder-cuerpo {
+    background-color: #cca300 !important;
+    color: #000000 !important;
+}
+
+.header-cuerpo {
+    background-color: #cca300 !important;
+    color: #000000 !important;
+}
+
+.seccion-tec {
+    margin-top: 40px;
+}
+
+.folder-tec {
+    background-color: #23170f !important; 
+    color: #ffffff !important;
+}
+
+.header-tec {
+    background-color: #23170f !important;
+    color: #ffffff !important;
+}
+
 .visual-pair {
     display: flex;
     gap: 15px;
@@ -896,7 +966,7 @@ h2 {
 
 .drawing-box figcaption {
     background: #000;
-    color: #0ff; /* Texto cyan retro */
+    color: #0ff; 
     width: 100%;
     text-align: center;
     font-size: 0.75rem;
@@ -905,12 +975,10 @@ h2 {
     bottom: 0;
 }
 
-/* ¡EL TRUCO MAGICO! Invierte el orden en tarjetas pares automágicamente */
 .retro-card:nth-child(even) .visual-pair {
     flex-direction: row-reverse;
 }
 
-/* Contenedor del audio */
 .audio-container {
     padding: 0 15px;
     margin-bottom: 15px;
@@ -918,11 +986,9 @@ h2 {
 
 .retro-audio {
     width: 100%;
-    /* Filtro brutalista para acoplar el reproductor nativo del navegador */
     filter: grayscale(1) contrast(1.2); 
 }
 
-/* Caja de texto estilo terminal */
 .terminal-text {
     background-color: #000000;
     color: #ffffff;
@@ -933,6 +999,22 @@ h2 {
     border: 2px solid #333;
     text-align: justify;
 }
+
+/* Boton de retum */
+
+.footer-nav {
+    text-align: center;
+    margin: 30px 10px;
+}
+
+.btn-return {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
 
 #patron-terraza {
 /*TRADUCCIÓN SENSORIAL:
@@ -1030,22 +1112,448 @@ contrastando con la rigidez de los entornos de transición anteriores.
 
 background-color: var(--bg-color);
 background-image: 
-repeating-linear-gradient(
-15deg, 
-#0b4a18 0px, 
-#0b4a18 2px, 
+radial-gradient(circle at 50% 100%, transparent 35%, #0b4a18 36%, #0b4a18 45%, transparent 46%),
+radial-gradient(circle at 50% 0%, transparent 35%, #0b4a18 36%, #0b4a18 45%, transparent 46%);
+background-size: 40px 40px;
+background-position: 0 0, 20px 20px;
+border-radius: 12px;
+}
+
+#patron-calle-1 {
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS es una traducción sensorial del dibujo 'Calle 1.jpg'. 
+Las espirales concéntricas y el color rojo oscuro emulan el 
+remolino de sonidos exteriores: el tráfico, las voces y el 
+caos auditivo de la calle que envuelve y abruma al oyente. 
+Se utilizan múltiples gradientes radiales repetidos y desfasados 
+para crear un vórtice visual que refleja la naturaleza cíclica y 
+absorbente del entorno sonoro urbano.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+repeating-radial-gradient(
+circle at 50% 50%, 
+#8b0000 0px, 
+#8b0000 3px, 
+transparent 3px, 
+transparent 20px
+),
+
+repeating-radial-gradient(
+circle at 30% 70%, 
+rgba(139, 0, 0, 0.6) 0px, 
+rgba(139, 0, 0, 0.6) 2px, 
 transparent 2px, 
-transparent 40px
+transparent 15px
+),
+
+repeating-radial-gradient(
+circle at 70% 30%, 
+rgba(139, 0, 0, 0.8) 0px, 
+rgba(139, 0, 0, 0.8) 1px, 
+transparent 1px, 
+transparent 10px
+);
+
+background-size: 100% 100%;
+}
+
+#patron-calle-2 {
+
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS traduce la experiencia sonora y visual de 
+'Esperando el bus'. Se combinan gradientes radiales 
+(que emulan espirales concéntricas) con gradientes lineales 
+entrecruzados a 45 y -45 grados (que forman el zigzag). 
+El choque de estas formas geométricas representa el contraste 
+entre la espera cíclica, ansiosa y estática del peatón, y la 
+interrupción violenta y lineal del tráfico vehicular. Se 
+utiliza el rojo oscuro (#8b0000) para mantener la identidad 
+de alerta y caos del bloque 'Exterior'.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+
+repeating-radial-gradient(
+circle at 20% 50%, 
+rgba(139, 0, 0, 0.4) 0px, 
+rgba(139, 0, 0, 0.4) 3px, 
+transparent 3px, 
+transparent 25px
 ),
 
 repeating-linear-gradient(
--15deg, 
-#0b4a18 0px, 
-#0b4a18 2px, 
+45deg, 
+#8b0000 0px, 
+#8b0000 2px, 
 transparent 2px, 
-transparent 40px
+transparent 15px
+    ),
+    repeating-linear-gradient(
+-45deg, 
+#8b0000 0px, 
+#8b0000 2px, 
+transparent 2px, 
+transparent 15px
 );
 
-background-size: 80px 80px;
-border-radius: 50px 20px 50px 20px;
+background-size: 100% 100%;
+}
+
+#patron-calle-3 {
+
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS representa la experiencia sonora de 'Calle 3'.
+Se utilizan gradientes lineales entrecruzados a 45 y -45 grados 
+para generar un choque de líneas rectas en zigzag de arriba a 
+abajo, simbolizando las interrupciones abruptas y cortantes del 
+entorno urbano exterior. Adicionalmente, mediante el control de 
+'background-size' y 'background-position', se agrupa un patrón 
+de zigzags mucho más pequeños y densos exclusivamente en la 
+esquina inferior izquierda, representando cómo la intensidad 
+del ruido se acumula y se vuelve más caótica a nivel del suelo.
+Se mantiene el color rojo oscuro (#8b0000) propio de la sección.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+repeating-linear-gradient(45deg, #8b0000 0px, #8b0000 2px, transparent 2px, transparent 8px),
+repeating-linear-gradient(-45deg, #8b0000 0px, #8b0000 2px, transparent 2px, transparent 8px),
+
+repeating-linear-gradient(45deg, #8b0000 0px, #8b0000 4px, transparent 4px, transparent 35px),
+repeating-linear-gradient(-45deg, #8b0000 0px, #8b0000 4px, transparent 4px, transparent 35px);
+background-size: 40% 40%, 40% 40%, 100% 100%, 100% 100%;
+background-position: bottom left, bottom left, center, center;
+background-repeat: no-repeat, no-repeat, repeat, repeat;
+}
+
+#patron-cuerpo-1 {
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS interpreta el sonido del corazón ('Cuerpo 1'). 
+Se emplean gradientes lineales para trazar líneas que viajan de 
+arriba a abajo y de izquierda a derecha. Mediante el ajuste de 
+'background-size', estas líneas se mantienen separadas en la mayor 
+parte del lienzo, pero colisionan en un clúster denso y apretado 
+en el extremo derecho, simulando la acumulación de tensión y el 
+pulso vital del órgano. El tono amarillo oscuro (#cca300) refleja 
+la energía biológica y el calor corporal.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+repeating-linear-gradient(0deg, #cca300 0px, #cca300 2px, transparent 2px, transparent 6px),
+repeating-linear-gradient(45deg, #cca300 0px, #cca300 2px, transparent 2px, transparent 6px),
+
+repeating-linear-gradient(0deg, rgba(204, 163, 0, 0.5) 0px, rgba(204, 163, 0, 0.5) 2px, transparent 2px, transparent 35px),
+repeating-linear-gradient(45deg, rgba(204, 163, 0, 0.5) 0px, rgba(204, 163, 0, 0.5) 2px, transparent 2px, transparent 35px);
+background-size: 30% 100%, 30% 100%, 100% 100%, 100% 100%;
+background-position: right top, right top, left top, left top;
+background-repeat: no-repeat, no-repeat, repeat, repeat;
+}
+
+#patron-cuerpo-2 {
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS es una abstracción del dibujo 'Cuerpo 2'. 
+Se estructuran líneas horizontales de baja opacidad que 
+fluyen de izquierda a derecha, representando la constancia 
+del ritmo biológico (como la respiración). Mediante el uso 
+estratégico de 'background-size' y 'background-position', 
+se generan dos zonas de altísima densidad lineal (cúmulos) 
+aisladas en la zona izquierda (superior e inferior). Estos 
+núcleos amarillos (#cca300) simbolizan puntos de presión, 
+tensión o nodos nerviosos corporales.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+repeating-linear-gradient(110deg, #cca300 0px, #cca300 2px, transparent 2px, transparent 6px),
+
+repeating-linear-gradient(70deg, #cca300 0px, #cca300 2px, transparent 2px, transparent 6px),
+
+repeating-linear-gradient(90deg, rgba(204, 163, 0, 0.4) 0px, rgba(204, 163, 0, 0.4) 2px, transparent 2px, transparent 25px);
+background-size: 40% 45%, 40% 45%, 100% 100%;
+background-position: left top, left bottom, center;
+background-repeat: no-repeat, no-repeat, repeat;
+}
+
+#patron-cuerpo-3 {
+/* TRADUCCIÓN SENSORIAL:
+Este patrón CSS traduce el concepto de 'Limpieza' del dibujo 
+'Cuerpo 3'. Para representar la purificación, se diseñó un 
+efecto estroboscópico simulando los cuadros de animación de un 
+óvalo amarillo (#cca300) que se desplaza de izquierda a derecha. 
+Al alterar matemáticamente las proporciones de los radios en cada 
+"cuadro" (pasando de vertical a horizontal y viceversa), se crea 
+la ilusión óptica de que el elemento gira sobre su propio eje. 
+La opacidad decreciente refleja cómo la densidad se disipa al 
+final del recorrido.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+radial-gradient(15px 40px at 15% 50%, rgba(204, 163, 0, 1) 90%, transparent 95%),
+radial-gradient(25px 30px at 35% 50%, rgba(204, 163, 0, 0.8) 90%, transparent 95%),
+radial-gradient(40px 15px at 55% 50%, rgba(204, 163, 0, 0.6) 90%, transparent 95%),
+radial-gradient(25px 30px at 75% 50%, rgba(204, 163, 0, 0.4) 90%, transparent 95%),
+radial-gradient(15px 40px at 95% 50%, rgba(204, 163, 0, 0.2) 90%, transparent 95%);
+background-size: 100% 100%;
+}
+
+#patron-tec-1 {
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS traduce visualmente el sonido 'Tec 1' (Encendido).
+Se utilizan gradientes lineales diagonales (135 grados) que son 
+visualmente interrumpidos por bandas del color de fondo, creando 
+un efecto de líneas cortas y fragmentadas. Estas pequeñas ráfagas 
+gráficas de color café casi negro (#23170f) representan los 
+chispazos eléctricos, el arranque mecánico intermitente y la carga 
+de datos de un sistema que despierta. La inclinación hacia abajo 
+simula la caída de energía activando los circuitos base.
+========================================= */
+
+background-color: var(--bg-color); 
+background-image: 
+repeating-linear-gradient(
+to bottom, 
+transparent 0px, 
+transparent 20px, 
+var(--bg-color) 20px, 
+var(--bg-color) 30px
+),
+
+repeating-linear-gradient(
+45deg, 
+#23170f 0px, 
+#23170f 2px, 
+transparent 2px, 
+transparent 15px
+);
+
+background-size: 100% 100%;
+}
+
+#patron-tec-2 {
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS representa el ritmo y la escalada sonora 
+de 'Tec 2' (Teclado). Mediante un único gradiente lineal 
+inclinado a 45 grados, se estructuraron 5 líneas precisas. 
+Aumentando gradualmente la diferencia porcentual entre los 
+cortes de color, cada línea es matemáticamente más gruesa 
+que la anterior. Esta progresión geométrica en tono café oscuro 
+(#23170f) emula la acumulación de datos, la intensidad del 
+tecleo y el in crescendo de la interacción humano-máquina.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: linear-gradient(
+45deg,
+transparent 0%, transparent 10%,
+#23170f 10%, #23170f 12%,
+transparent 12%, transparent 25%,
+#23170f 25%, #23170f 29%,
+transparent 29%, transparent 45%,
+#23170f 45%, #23170f 52%,
+transparent 52%, transparent 70%,
+#23170f 70%, #23170f 80%,
+transparent 80%, transparent 92%,
+#23170f 92%, #23170f 105%
+);
+
+background-size: 100% 100%;
+}
+
+#patron-tec-3 {
+/*TRADUCCIÓN SENSORIAL:
+Este patrón CSS representa el sonido 'Tec 3' (Interferencia).
+Se genera un fondo de líneas entrecruzadas que emulan el ruido 
+estático, limitadas verticalmente (no tocan los bordes) para 
+representar una banda de frecuencia contenida. Sobre este caos, 
+se superponen formas geométricas ordenadas de izquierda a derecha 
+(cubo, rectángulo, cilindro, triángulo). Estas figuras matemáticas 
+de color café oscuro (#23170f) simbolizan el esfuerzo del 
+hardware por decodificar, estructurar y dar volumen tridimensional 
+a la información ruidosa del entorno.
+========================================= */
+
+background-color: var(--bg-color);
+background-image: 
+
+linear-gradient(115deg, transparent 48%, #23170f 49%, #23170f 51%, transparent 52%),
+linear-gradient(-115deg, transparent 48%, #23170f 49%, #23170f 51%, transparent 52%),
+linear-gradient(0deg, #23170f, #23170f),
+radial-gradient(ellipse, #23170f 60%, transparent 65%),
+radial-gradient(ellipse, #23170f 60%, transparent 65%),
+linear-gradient(90deg, #23170f, #23170f),
+linear-gradient(45deg, rgba(35,23,15,0.8), rgba(35,23,15,0.8)),
+linear-gradient(#23170f, #23170f),
+linear-gradient(rgba(35,23,15,0.4), rgba(35,23,15,0.4)),
+repeating-linear-gradient(25deg, rgba(35,23,15,0.3) 0px, rgba(35,23,15,0.3) 1px, transparent 1px, transparent 12px),
+repeating-linear-gradient(-50deg, rgba(35,23,15,0.5) 0px, rgba(35,23,15,0.5) 2px, transparent 2px, transparent 20px);
+
+background-size: 
+40px 40px, 40px 40px, 40px 2px,
+30px 10px, 30px 10px, 20px 40px,
+25px 50px,
+30px 30px, 30px 30px,
+100% 70%, 100% 70%;
+
+background-position: 
+85% 45%, 85% 45%, 85% 61%,
+65% 35%, 65% 65%, 65% 50%,
+40% 50%,
+15% 45%, 17% 48%,
+center center, center center;
+background-repeat: 
+no-repeat, no-repeat, no-repeat,
+no-repeat, no-repeat, no-repeat,
+no-repeat,
+no-repeat, no-repeat,
+repeat, repeat;
+}
+
+.seccion-video {
+    margin-top: 40px;
+}
+.folder-video {
+    background-color: #4b0082 !important;
+    color: #ffffff !important;
+}
+.header-video {
+    background-color: #4b0082 !important;
+    color: #ffffff !important;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item {
+    background: var(--bg-color);
+    border: 2px solid var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.video-frame video {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    display: block;
+    border: 1px solid #444;
+    background-color: #000;
+}
+
+.video-frame video {
+    width: 100%;
+    display: block;
+    border: 1px solid #444;
+}
+
+.video-footer-desc {
+    padding: 15px;
+    font-size: 0.85rem;
+    color: var(--text-color);
+    border-top: 1px solid var(--text-color);
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.layout-sonoro {
+    display: grid;
+    grid-template-columns: 260px 1fr; 
+    gap: 25px;
+    align-items: start;
+}
+
+.widget-retro {
+    border: 2px solid var(--text-color);
+    background-color: var(--bg-color);
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.widget-header {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.nav-lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-lateral a {
+    padding: 10px 12px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    transition: background 0.2s;
+}
+
+.nav-lateral a:last-child {
+    border-bottom: none;
+}
+
+.nav-lateral a:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.bitacora-content {
+    padding: 12px;
+    font-size: 0.75rem;
+    max-height: 350px;
+}
+
+.log-entry {
+    margin-bottom: 12px;
+    line-height: 1.4;
+    color: var(--text-color);
+    opacity: 0.85;
+}
+
+.log-status {
+    margin-top: 15px;
+    padding-top: 8px;
+    border-top: 1px solid var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 850px) {
+    .layout-sonoro {
+        grid-template-columns: 1fr;
+    }
+}
+
+.sidebar-izq {
+    position: sticky;
+    top: 20px; 
+    align-self: start;
+}
+
+.bitacora-content {
+    padding: 10px;
+    font-size: 0.7rem;
+    font-family: 'Courier New', monospace;
+}
+
+.log-entry {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 4px 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
