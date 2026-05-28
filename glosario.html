@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~* [ WORK.ZIP - GLOSARIO.EXE ] *~</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/glosario.css">
+</head>
+<body>
+
+<div class="wrapper wrapper-glos">
+
+    <!-- ▸ HEADER -->
+    <header class="manga-box header-glos">
+        <div class="gs-banner">
+            <h1 class="gs-banner-title">[ GLOSARIO.EXE ]</h1>
+            <p class="gs-banner-sub">// work.zip/reference — HTML · CSS · JavaScript</p>
+        </div>
+        <div class="marquee-bar">
+            <marquee scrollamount="4">REFERENCIA COMPLETA // HTML + CSS + JAVASCRIPT // TODOS LOS ELEMENTOS USADOS EN ESTE PROYECTO // LEGANS BLOG v0.8</marquee>
+        </div>
+    </header>
+
+    <!-- ▸ CONTENIDO -->
+    <main class="manga-box main-glos">
+
+        <!-- Intro -->
+        <div class="gs-intro">
+            <div class="gs-intro-tags">
+                <span class="gs-tag tag-html">HTML</span>
+                <span class="gs-tag tag-css">CSS</span>
+                <span class="gs-tag tag-js">JS</span>
+            </div>
+            <div class="gs-intro-text">
+                <p>Glosario estructurado de todos los elementos, propiedades y métodos usados en <b>LEGANS BLOG v0.8</b>.</p>
+                <p>Cada entrada incluye descripción y referencia de en qué página fue utilizada.</p>
+            </div>
+        </div>
+
+        <!-- Leyenda de páginas -->
+        <div class="gs-legend">
+            <span class="gs-page-tag tag-all">ALL</span>
+            <span class="gs-legend-sep">todas las páginas</span>
+            <span class="gs-page-tag tag-idx">IDX</span>
+            <span class="gs-legend-sep">index.html</span>
+            <span class="gs-page-tag tag-as">AS</span>
+            <span class="gs-legend-sep">archivo-sonoro.html</span>
+            <span class="gs-page-tag tag-fb">FB</span>
+            <span class="gs-legend-sep">flexbox.html</span>
+            <span class="gs-page-tag tag-gd">GD</span>
+            <span class="gs-legend-sep">grid.html</span>
+            <span class="gs-page-tag tag-ty">TY</span>
+            <span class="gs-legend-sep">tipografias.html</span>
+        </div>
+
+        <!-- Layout: aside nav + contenido -->
+        <div class="gs-layout">
+
+            <!-- ── ASIDE NAV STICKY ── -->
+            <aside class="gs-nav-aside">
+                <nav class="gs-nav">
+                    <div class="gs-nav-title">// ÍNDICE</div>
+
+                    <div class="gs-nav-section">
+                        <a href="#sec-html" class="gs-nav-section-label gs-nav-html-label">&lt;/&gt; HTML</a>
+                        <a href="#html-doc"    class="gs-nav-link">> doc</a>
+                        <a href="#html-sem"    class="gs-nav-link">> semántica</a>
+                        <a href="#html-con"    class="gs-nav-link">> contenido</a>
+                        <a href="#html-form"   class="gs-nav-link">> formularios</a>
+                        <a href="#html-media"  class="gs-nav-link">> media</a>
+                        <a href="#html-tabla"  class="gs-nav-link">> tablas</a>
+                        <a href="#html-attr"   class="gs-nav-link">> atributos</a>
+                    </div>
+
+                    <div class="gs-nav-section">
+                        <a href="#sec-css" class="gs-nav-section-label gs-nav-css-label">{ } CSS</a>
+                        <a href="#css-vars"  class="gs-nav-link">> variables</a>
+                        <a href="#css-box"   class="gs-nav-link">> box model</a>
+                        <a href="#css-typo"  class="gs-nav-link">> tipografía</a>
+                        <a href="#css-flex"  class="gs-nav-link">> flexbox</a>
+                        <a href="#css-grid"  class="gs-nav-link">> grid</a>
+                        <a href="#css-vis"   class="gs-nav-link">> visual</a>
+                        <a href="#css-anim"  class="gs-nav-link">> animación</a>
+                        <a href="#css-sel"   class="gs-nav-link">> selectores</a>
+                        <a href="#css-units" class="gs-nav-link">> unidades</a>
+                    </div>
+
+                    <div class="gs-nav-section">
+                        <a href="#sec-js" class="gs-nav-section-label gs-nav-js-label">[ ] JS</a>
+                        <a href="#js-dom"    class="gs-nav-link">> dom</a>
+                        <a href="#js-evt"    class="gs-nav-link">> eventos</a>
+                        <a href="#js-canvas" class="gs-nav-link">> canvas</a>
+                        <a href="#js-utils"  class="gs-nav-link">> utilidades</a>
+                    </div>
+                </nav>
+                <div class="gs-nav-img-wrap">
+                    <img src="media/Imagenes/glosario/pensando.jpg" alt="Glosario" class="gs-nav-img">
+                </div>
+            </aside>
+
+            <!-- ── CONTENIDO PRINCIPAL ── -->
+            <div class="gs-content">
+
+                <!-- ================================================================
+                     SECCIÓN HTML
+                     ================================================================ -->
+                <div class="gs-section" id="sec-html">
+                    <div class="gs-section-header gs-html-header">&lt;/&gt; HTML — ELEMENTOS Y ATRIBUTOS</div>
+
+                    <div class="gs-subsection" id="html-doc">
+                        <div class="gs-sub-title">// Estructura del documento</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Elemento</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">&lt;!DOCTYPE html&gt;</td>
+                                    <td>Declaración de tipo de documento. Activa el modo estándar del navegador.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;html lang="es"&gt;</td>
+                                    <td>Elemento raíz del documento. <code>lang</code> declara el idioma para accesibilidad y SEO.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;head&gt;</td>
+                                    <td>Contenedor de metadatos: charset, viewport, título, hojas de estilo. No visible en pantalla.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;meta charset="UTF-8"&gt;</td>
+                                    <td>Codificación de caracteres. Permite tildes y caracteres especiales sin errores.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;meta name="viewport"&gt;</td>
+                                    <td>Controla el viewport móvil. Base del diseño responsivo con <code>width=device-width</code>.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;title&gt;</td>
+                                    <td>Texto en la pestaña del navegador y en resultados de búsqueda.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;link rel="stylesheet"&gt;</td>
+                                    <td>Vincula una hoja de estilos CSS externa. Se apilan: global.css + css específico de página.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;script src=""&gt;</td>
+                                    <td>Vincula JavaScript externo. Al final del <code>&lt;body&gt;</code> para no bloquear el renderizado.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;body&gt;</td>
+                                    <td>Contenedor de todo el contenido visible de la página.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="html-sem">
+                        <div class="gs-sub-title">// Semántica y estructura</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Elemento</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">&lt;header&gt;</td>
+                                    <td>Encabezado de página o sección. Contiene banner principal y barra marquee.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;main&gt;</td>
+                                    <td>Contenido principal y único de la página. Solo debe existir uno por documento.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;footer&gt;</td>
+                                    <td>Pie de página. Créditos, número de versión del proyecto, derechos.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;nav&gt;</td>
+                                    <td>Bloque de navegación semántico. Sidebar izquierdo de index; navbar en demo Grid.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;aside&gt;</td>
+                                    <td>Contenido lateral relacionado. Sidebar derecho con log del sistema y guestbook.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;section&gt;</td>
+                                    <td>Sección temática de contenido con significado propio. Módulos principales de index.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="html-con">
+                        <div class="gs-sub-title">// Contenido y texto</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Elemento</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">&lt;div&gt;</td>
+                                    <td>Contenedor genérico de bloque. Base de la mayoría de componentes del sitio.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;span&gt;</td>
+                                    <td>Contenedor genérico en línea. Tags, badges, etiquetas y contadores numéricos.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;p&gt;</td>
+                                    <td>Párrafo. Unidad semántica de texto en prosa. Margen vertical por defecto.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;h1&gt;</td>
+                                    <td>Encabezado de nivel 1. Título principal del banner en cada página.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;h2&gt;</td>
+                                    <td>Encabezado de nivel 2. Títulos de sección y módulos en index.html.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;h3&gt;</td>
+                                    <td>Encabezado de nivel 3. Sub-títulos en el demo Hero de la página Grid.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;b&gt;</td>
+                                    <td>Negrita semántica (importancia). Destacar términos clave en párrafos de contenido.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;i&gt;</td>
+                                    <td>Cursiva semántica (voz alternativa). Frases en diferente tono o registro.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;pre&gt;</td>
+                                    <td>Texto preformateado. Preserva espacios y saltos de línea. Bloques de código CSS.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;br&gt;</td>
+                                    <td>Salto de línea dentro de un párrafo. Usado en demos de tipografía y sección Hero.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;marquee&gt;</td>
+                                    <td>Texto animado horizontal (deprecated en HTML5). Barra de estado superior de cada página.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;ul&gt; / &lt;li&gt;</td>
+                                    <td>Lista desordenada y sus ítems. Menú de directorio y enlaces de sidebar izquierdo.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;a href=""&gt;</td>
+                                    <td>Enlace de hipervínculo. Navegación entre páginas del proyecto y botones de regreso.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="html-form">
+                        <div class="gs-sub-title">// Formularios</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Elemento</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">&lt;form&gt;</td>
+                                    <td>Contenedor de formulario. Guestbook en index; demo de formulario en Grid.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;input type="text"&gt;</td>
+                                    <td>Campo de texto de una línea. Alias y mensaje en el guestbook de index.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;input type="email"&gt;</td>
+                                    <td>Campo de email con validación de formato nativa del navegador.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;button type="submit"&gt;</td>
+                                    <td>Botón que dispara el evento submit del formulario. Guestbook y demos de Grid.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;button type="reset"&gt;</td>
+                                    <td>Botón que limpia todos los campos del formulario a su estado inicial.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;label&gt;</td>
+                                    <td>Etiqueta de campo de formulario. Mejora accesibilidad; clic en label activa el input.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;textarea&gt;</td>
+                                    <td>Área de texto multilínea. Campo de mensaje largo en el demo de formulario Grid.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="html-media">
+                        <div class="gs-sub-title">// Media embebida</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Elemento</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">&lt;img&gt;</td>
+                                    <td>Imagen estática. Combinado con <code>object-fit</code> y <code>filter: grayscale</code> para estética B&W.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;audio loop&gt;</td>
+                                    <td>Reproductor de audio HTML5. Atributo <code>loop</code> repite la canción indefinidamente.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;source src="" type=""&gt;</td>
+                                    <td>Fuente de audio con su tipo MIME. Permite especificar formatos alternativos.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;canvas&gt;</td>
+                                    <td>Área de dibujo 2D controlada por JavaScript. Base del juego Snake.exe.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="html-tabla">
+                        <div class="gs-sub-title">// Tablas de datos</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Elemento</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">&lt;table&gt;</td>
+                                    <td>Tabla de datos estructurados. Bitácoras de grabación en archivo-sonoro.html.</td>
+                                    <td><span class="gs-page-tag tag-as">AS</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;thead&gt;</td>
+                                    <td>Grupo de encabezado de tabla. Define las columnas con celdas <code>&lt;th&gt;</code>.</td>
+                                    <td><span class="gs-page-tag tag-as">AS</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;tbody&gt;</td>
+                                    <td>Grupo del cuerpo de tabla. Contiene todas las filas de datos.</td>
+                                    <td><span class="gs-page-tag tag-as">AS</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;tr&gt;</td>
+                                    <td>Fila de tabla. Contenedor de celdas <code>&lt;th&gt;</code> o <code>&lt;td&gt;</code>.</td>
+                                    <td><span class="gs-page-tag tag-as">AS</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;th&gt;</td>
+                                    <td>Celda de encabezado. Negrita y centrada por defecto. Describe la columna.</td>
+                                    <td><span class="gs-page-tag tag-as">AS</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">&lt;td&gt;</td>
+                                    <td>Celda de dato. Contenido regular de cada fila de la tabla.</td>
+                                    <td><span class="gs-page-tag tag-as">AS</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="html-attr">
+                        <div class="gs-sub-title">// Atributos globales y especiales</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Atributo</th><th>Descripción</th><th>Usado en</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">id=""</td>
+                                    <td>Identificador único en el documento. JavaScript lo usa para seleccionar elementos.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">class=""</td>
+                                    <td>Clase CSS. Vincula estilos y comportamientos. Puede repetirse en múltiples elementos.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">style=""</td>
+                                    <td>Estilos inline. Mayor especificidad que clases. Overrides puntuales en header.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">alt=""</td>
+                                    <td>Texto alternativo de imagen. Accesibilidad y fallback si la imagen no carga.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">href=""</td>
+                                    <td>URL o ruta de destino en enlaces. Puede ser ruta relativa, absoluta o ancla (#).</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">placeholder=""</td>
+                                    <td>Texto guía dentro de inputs. Desaparece al escribir. Orienta al usuario.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">maxlength=""</td>
+                                    <td>Límite máximo de caracteres en input/textarea. Validación nativa del navegador.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">required</td>
+                                    <td>Atributo booleano. El formulario no puede enviarse si el campo está vacío.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">autocomplete="off"</td>
+                                    <td>Desactiva las sugerencias de autocompletado del navegador en el input.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">loop</td>
+                                    <td>Atributo booleano en &lt;audio&gt;. El audio se reinicia automáticamente al terminar.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">scrollamount=""</td>
+                                    <td>Velocidad de desplazamiento del &lt;marquee&gt; en píxeles por fotograma.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">onsubmit="return false"</td>
+                                    <td>Handler inline que previene el envío real del formulario demo (sin backend).</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div><!-- /sec-html -->
+
+
+                <!-- ================================================================
+                     SECCIÓN CSS
+                     ================================================================ -->
+                <div class="gs-section" id="sec-css">
+                    <div class="gs-section-header gs-css-header">{ } CSS — PROPIEDADES Y SELECTORES</div>
+
+                    <div class="gs-subsection" id="css-vars">
+                        <div class="gs-sub-title">// Variables & Reset</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad / Selector</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">:root { --var: valor }</td>
+                                    <td>Define variables CSS globales accesibles en todo el documento mediante <code>var()</code>.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">--bg-color: #ffffff</td>
+                                    <td>Variable: color de fondo global. Permite cambiar el tema del sitio en un solo lugar.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">--text-color: #000000</td>
+                                    <td>Variable: color principal de texto y bordes.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">--border-color: #000000</td>
+                                    <td>Variable: color de bordes del sistema manga-box.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">--glitch-cyan / --glitch-magenta</td>
+                                    <td>Variables de acento neón. Box-shadow del wrapper y scrollbar hover en index.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">* { box-sizing: border-box }</td>
+                                    <td>Reset universal. Padding y border incluidos en el ancho/alto declarado del elemento.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">* { margin: 0; padding: 0 }</td>
+                                    <td>Reset de espaciado. Elimina márgenes y rellenos por defecto del navegador.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">var(--nombre)</td>
+                                    <td>Función que lee el valor de una variable CSS personalizada en tiempo de renderizado.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-box">
+                        <div class="gs-sub-title">// Box Model y espaciado</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">margin</td>
+                                    <td>Espacio exterior del elemento. Shorthand: top right bottom left. Separa cajas entre sí.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">padding</td>
+                                    <td>Espacio interior. Entre borde y contenido. Afecta el tamaño si no hay box-sizing.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">border</td>
+                                    <td>Borde del elemento. Shorthand: grosor estilo color. Base del estilo manga-box (3px solid #000).</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">width / height</td>
+                                    <td>Dimensiones del elemento. Acepta px, %, vw/vh, auto.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">max-width</td>
+                                    <td>Límite máximo de ancho. Wrapper limitado a 1000px centrado con <code>margin: 0 auto</code>.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">min-height</td>
+                                    <td>Altura mínima garantizada aunque el contenido sea menor. Paneles de demo en TY y FB.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span> <span class="gs-page-tag tag-fb">FB</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">overflow: hidden</td>
+                                    <td>Recorta el contenido que desborda el contenedor. Banners e imágenes con object-fit.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">box-shadow</td>
+                                    <td>Sombra de caja: X Y blur spread color. Efecto manga offset: <code>5px 5px 0px #000</code>.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">position: relative / absolute / fixed / sticky</td>
+                                    <td>Tipo de posicionamiento. Controla el flujo normal del documento y el stacking context.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">top / left / z-index</td>
+                                    <td>Coordenadas de posicionamiento y capa de apilamiento. Mayor z-index = por encima.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-typo">
+                        <div class="gs-sub-title">// Tipografía</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">font-family</td>
+                                    <td>Fuente tipográfica. Base del sitio: "Courier New" monospace. Lista de fallbacks.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">font-size</td>
+                                    <td>Tamaño de texto. Acepta px, rem, em, %, vw, clamp(). Clave para la jerarquía visual.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">font-weight</td>
+                                    <td>Grosor del trazo tipográfico. 100 (thin) a 900 (black). bold = 700, normal = 400.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">font-style</td>
+                                    <td>Estilo: normal, italic, oblique [grados]. Cursiva o inclinación artificial.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">font-variant</td>
+                                    <td>Variante tipográfica. <code>small-caps</code>: minúsculas como mayúsculas reducidas.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">text-align</td>
+                                    <td>Alineación horizontal del texto: left, center, right, justify.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">text-decoration</td>
+                                    <td>Decoración: underline, overline, line-through, none. Links usan none.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">text-transform</td>
+                                    <td>Transformación: uppercase, lowercase, capitalize. No modifica el HTML, solo la vista.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">letter-spacing</td>
+                                    <td>Espaciado entre letras (tracking). Negativo = denso, positivo = aireado. Acepta em.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">word-spacing</td>
+                                    <td>Espaciado entre palabras. Solo afecta los espacios, no las letras individuales.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">line-height</td>
+                                    <td>Interlineado. Unitless (1.5) = múltiplo del font-size actual. Afecta la legibilidad.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">text-shadow</td>
+                                    <td>Sombra de texto: X Y blur color. Apilado sin blur = efecto risograph / cómic.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">text-underline-offset</td>
+                                    <td>Distancia del subrayado al texto base. Complementa text-decoration: underline.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">white-space</td>
+                                    <td>Control de saltos de línea: nowrap evita quiebre, pre conserva espacios.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-flex">
+                        <div class="gs-sub-title">// Flexbox</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">display: flex</td>
+                                    <td>Activa el modelo de caja flexible. Los ítems se alinean en un eje.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">flex-direction</td>
+                                    <td>Eje principal: row (→ default), row-reverse, column (↓), column-reverse.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">justify-content</td>
+                                    <td>Distribución en el eje principal: flex-start, center, flex-end, space-between, space-around, space-evenly.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">align-items</td>
+                                    <td>Alineación en el eje transversal: flex-start, center, flex-end, stretch, baseline.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">align-content</td>
+                                    <td>Alineación de múltiples líneas (requiere flex-wrap). Demostrado en flexbox.html.</td>
+                                    <td><span class="gs-page-tag tag-fb">FB</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">flex-wrap</td>
+                                    <td>Permite el salto de línea de ítems: nowrap (default), wrap, wrap-reverse.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">flex: 1</td>
+                                    <td>Shorthand de flex-grow flex-shrink flex-basis. El ítem ocupa todo el espacio disponible.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span> <span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">flex-shrink: 0</td>
+                                    <td>El ítem no se comprime aunque no haya espacio. Útil para imágenes y badges fijos.</td>
+                                    <td><span class="gs-page-tag tag-fb">FB</span> <span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">gap</td>
+                                    <td>Espaciado entre ítems flex o celdas grid. Reemplaza márgenes entre elementos hijos.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-grid">
+                        <div class="gs-sub-title">// CSS Grid</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">display: grid</td>
+                                    <td>Activa el modelo de cuadrícula bidimensional. Filas y columnas simultáneas.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span> <span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">grid-template-columns</td>
+                                    <td>Define las columnas del grid. Acepta px, fr, %, auto, repeat(), minmax().</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span> <span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">grid-template-areas</td>
+                                    <td>Nombra visualmente las áreas del layout con strings ASCII. Dashboard (EJ.4).</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">grid-area</td>
+                                    <td>Asigna un elemento a un área nombrada con grid-template-areas.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">grid-column: 1 / -1</td>
+                                    <td>El elemento abarca desde la primera hasta la última línea del grid (span completo).</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">repeat(auto-fit, minmax())</td>
+                                    <td>Grid responsivo sin media queries. El número de columnas se ajusta automáticamente.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">fr (unidad)</td>
+                                    <td>Fracción del espacio disponible. <code>repeat(3, 1fr)</code> = tres columnas iguales.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">align-items (en grid)</td>
+                                    <td>Alineación vertical de ítems dentro de sus celdas. center los centra verticalmente.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-vis">
+                        <div class="gs-sub-title">// Visual y efectos</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">background-color</td>
+                                    <td>Color sólido de fondo del elemento.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">background-image</td>
+                                    <td>Imagen o gradiente de fondo. Patrones halftone, texturas diagonales, SVG de grano.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">repeating-linear-gradient()</td>
+                                    <td>Gradiente lineal que se repite. Textura diagonal retro en scrollbar y banners.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">radial-gradient()</td>
+                                    <td>Gradiente radial. Patrón de puntos halftone en paneles de demo de tipografías.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span> <span class="gs-page-tag tag-fb">FB</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">filter: grayscale()</td>
+                                    <td>Desatura la imagen a B&W. Combinado con <code>contrast()</code> para estética manga.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">filter: invert()</td>
+                                    <td>Invierte los colores de la imagen. Efecto negativo fotográfico en hover del banner.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">opacity</td>
+                                    <td>Transparencia del elemento completo. 0 = invisible, 1 = opaco. Tarjetas "done" en Kanban.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span> <span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">transition</td>
+                                    <td>Animación suave de propiedades CSS. Shorthand: propiedad duración timing-function.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">transform: translate()</td>
+                                    <td>Traslación 2D. Efecto hover de tarjetas: se desplazan -3px en X e Y.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">transform: scale()</td>
+                                    <td>Escala el elemento. Zoom suave al pasar el cursor sobre la imagen del banner de index.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">object-fit: cover</td>
+                                    <td>La imagen cubre su contenedor manteniendo la proporción original. Recorta lo sobrante.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">object-position</td>
+                                    <td>Punto focal del object-fit. <code>center top</code> prioriza la parte superior de la imagen.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span> <span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">pointer-events: none</td>
+                                    <td>El elemento no captura eventos de ratón. Textura SVG del fondo (body::before).</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">user-select: none</td>
+                                    <td>Impide la selección de texto. Ítems decorativos con imagen en flexbox.html.</td>
+                                    <td><span class="gs-page-tag tag-fb">FB</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-anim">
+                        <div class="gs-sub-title">// Animación CSS</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">@keyframes nombre { }</td>
+                                    <td>Define los fotogramas clave de una animación CSS (0%/from a 100%/to).</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">animation</td>
+                                    <td>Shorthand: nombre duración timing iteraciones. Textura de grano y punto blink.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">steps(n)</td>
+                                    <td>Función de timing para pasos discretos. Efecto de grano de TV analógica.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">animation: blinker 1s linear infinite</td>
+                                    <td>Animación de parpadeo: alterna opacidad 1 → 0 cada segundo. Punto de estado.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-sel">
+                        <div class="gs-sub-title">// Selectores y pseudo-elementos</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Selector</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">* (universal)</td>
+                                    <td>Selecciona todos los elementos del documento. Reset de margin, padding, box-sizing.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">:hover</td>
+                                    <td>Estado al pasar el cursor. Efectos: translate, box-shadow ampliado, inversión de colores.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">:nth-child(4n+1)</td>
+                                    <td>Selección por posición con fórmula cíclica. Ciclo de personajes en flexbox.html.</td>
+                                    <td><span class="gs-page-tag tag-fb">FB</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">:not([attr])</td>
+                                    <td>Excluye elementos del selector. Detecta imagen sin src para mostrar placeholder.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">[attr="valor"]</td>
+                                    <td>Selector de atributo. <code>img[src=""]</code> detecta src vacío para mostrar label placeholder.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">::before</td>
+                                    <td>Pseudo-elemento insertado antes del contenido. Textura de grano SVG del body.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">::-webkit-scrollbar</td>
+                                    <td>Customización de barra de scroll en Chrome/Safari. Estilo retro Windows 98.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">@media (max-width: Npx)</td>
+                                    <td>Media query responsive. Activa estilos alternativos cuando el viewport es menor a N.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="css-units">
+                        <div class="gs-sub-title">// Unidades y funciones</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Unidad / Función</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">px</td>
+                                    <td>Píxeles. Unidad absoluta. No escala con preferencias de accesibilidad del usuario.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">rem</td>
+                                    <td>Relativo al font-size del elemento raíz (html). Por defecto 1rem = 16px. Escalable.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">em</td>
+                                    <td>Relativo al font-size del elemento padre. Se acumula en elementos anidados.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">% (porcentaje)</td>
+                                    <td>Porcentaje del elemento padre. Fluid para anchos de columnas y posicionamiento.</td>
+                                    <td><span class="gs-page-tag tag-all">ALL</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">vw / vh</td>
+                                    <td>1% del ancho / alto del viewport. Tipografía fluida basada en pantalla.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">fr</td>
+                                    <td>Fracción del espacio disponible en grid. <code>1fr 1fr</code> = dos columnas iguales.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">clamp(min, ideal, max)</td>
+                                    <td>Valor que escala entre mínimo y máximo. Tipografía fluida sin media queries.</td>
+                                    <td><span class="gs-page-tag tag-ty">TY</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">minmax(min, max)</td>
+                                    <td>Rango de tamaño en grid. <code>minmax(220px, 1fr)</code> = columna flexible con mínimo.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">repeat(n, valor)</td>
+                                    <td>Repite una definición N veces en grid. <code>repeat(3, 1fr)</code> = 3 fracciones iguales.</td>
+                                    <td><span class="gs-page-tag tag-gd">GD</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div><!-- /sec-css -->
+
+
+                <!-- ================================================================
+                     SECCIÓN JAVASCRIPT
+                     ================================================================ -->
+                <div class="gs-section" id="sec-js">
+                    <div class="gs-section-header gs-js-header">[ ] JavaScript — MÉTODOS Y APIs</div>
+
+                    <div class="gs-subsection" id="js-dom">
+                        <div class="gs-sub-title">// Selección y manipulación del DOM</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Método / Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">document.getElementById()</td>
+                                    <td>Selecciona el elemento con ese id. Más directo que querySelector para ids únicos.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">document.querySelector()</td>
+                                    <td>Selecciona el primer elemento que coincide con un selector CSS.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">document.querySelectorAll()</td>
+                                    <td>Retorna un NodeList con todos los elementos que coinciden. Carátulas de álbumes.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">document.createElement()</td>
+                                    <td>Crea un nuevo nodo HTML en memoria. Construye el div de cada mensaje del guestbook.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.innerHTML</td>
+                                    <td>Lee o escribe el HTML interno de un elemento. Incluye etiquetas HTML en la cadena.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.innerText</td>
+                                    <td>Lee o escribe solo el texto visible, sin interpretar HTML. Puntuación del snake.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.style.propiedad</td>
+                                    <td>Modifica estilos inline desde JavaScript. Color del botón play/stop del reproductor.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.classList.add()</td>
+                                    <td>Agrega una clase CSS al elemento sin reemplazar las clases existentes.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.appendChild()</td>
+                                    <td>Agrega un nodo hijo al final del elemento. Inyecta mensajes en el guestbook.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.scrollTop</td>
+                                    <td>Posición actual del scroll vertical. Se iguala a scrollHeight para ir al fondo.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.scrollHeight</td>
+                                    <td>Altura total del contenido scrollable incluyendo lo no visible en pantalla.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.value</td>
+                                    <td>Valor actual de un input o textarea. Se lee para obtener y se vacía para limpiar.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">element.focus()</td>
+                                    <td>Mueve el foco del teclado al elemento. Devuelve el cursor al campo de texto.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="js-evt">
+                        <div class="gs-sub-title">// Eventos</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Evento / Método</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">addEventListener(tipo, fn)</td>
+                                    <td>Registra una función callback para escuchar un tipo de evento en el elemento.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">"DOMContentLoaded"</td>
+                                    <td>Se dispara cuando el HTML está completamente parseado, sin esperar imágenes.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">"keydown"</td>
+                                    <td>Se dispara al presionar una tecla. Captura flechas y espacio para controlar Snake.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">"submit"</td>
+                                    <td>Se dispara al enviar un formulario. Captura el guestbook para procesarlo con JS.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">"mouseenter" / "mouseleave"</td>
+                                    <td>Entrada y salida del cursor sobre un elemento. Tooltip de carátulas de álbumes.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">"mousemove"</td>
+                                    <td>Movimiento continuo del cursor. Actualiza la posición del tooltip siguiendo al ratón.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">event.preventDefault()</td>
+                                    <td>Cancela el comportamiento por defecto: recarga en submit, scroll en teclas de flecha.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">event.keyCode</td>
+                                    <td>Código numérico de la tecla. 37=← 38=↑ 39=→ 40=↓ 32=espacio.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">event.pageX / pageY</td>
+                                    <td>Posición del cursor relativa a la página completa. Posiciona el tooltip en hover.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="js-canvas">
+                        <div class="gs-sub-title">// Canvas 2D API — Snake.exe</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Método / Propiedad</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">canvas.getContext("2d")</td>
+                                    <td>Obtiene el objeto de renderizado 2D. Punto de entrada para todas las operaciones de dibujo.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.fillStyle</td>
+                                    <td>Color de relleno para rectángulos y texto. Se asigna antes de cada operación de dibujo.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.strokeStyle</td>
+                                    <td>Color del contorno de formas. Bordes blancos entre segmentos de la serpiente.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.fillRect(x, y, w, h)</td>
+                                    <td>Dibuja un rectángulo sólido. Fondo, segmentos de serpiente y la comida.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.strokeRect(x, y, w, h)</td>
+                                    <td>Dibuja el contorno de un rectángulo. Separación visual entre segmentos.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.fillText(texto, x, y)</td>
+                                    <td>Dibuja texto con fillStyle. Pantalla de inicio "INSERT COIN" y game over.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.font</td>
+                                    <td>Define la fuente para fillText(). Mismo formato que la propiedad CSS font.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">ctx.textAlign</td>
+                                    <td>Alineación horizontal del texto en canvas. "center" centra respecto al punto X.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="gs-subsection" id="js-utils">
+                        <div class="gs-sub-title">// Utilidades y métodos nativos</div>
+                        <table class="gs-table">
+                            <thead><tr><th>Método</th><th>Descripción</th><th>Archivo</th></tr></thead>
+                            <tbody>
+                                <tr>
+                                    <td class="gs-code">setInterval(fn, ms)</td>
+                                    <td>Ejecuta una función cada N milisegundos. Motor del juego Snake (100ms = 10fps).</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">clearInterval(id)</td>
+                                    <td>Detiene un intervalo activo. Para el juego al detectar game over.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">new Date()</td>
+                                    <td>Crea un objeto con la fecha y hora actuales del sistema operativo.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">Date.getHours() / getMinutes()</td>
+                                    <td>Extrae horas y minutos del objeto Date. Timestamp [HH:MM] para el guestbook.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">Math.floor()</td>
+                                    <td>Redondea hacia abajo al entero más cercano. Posición aleatoria de la comida.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">Math.random()</td>
+                                    <td>Genera número pseudoaleatorio entre 0 y 1. Combinado con floor() para posición.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">String.padStart(n, "0")</td>
+                                    <td>Rellena el inicio de un string hasta N chars. Formato HH:MM ("9" → "09").</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">String.trim()</td>
+                                    <td>Elimina espacios en blanco al inicio y fin del string. Limpia el input del usuario.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">Array.push() / pop()</td>
+                                    <td>Agrega/elimina al final del array. pop() elimina la cola de la serpiente por frame.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">Array.unshift()</td>
+                                    <td>Agrega un elemento al inicio. Inserta la nueva cabeza de la serpiente cada frame.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">Array.indexOf()</td>
+                                    <td>Retorna el índice del elemento o -1 si no existe. Detecta teclas de navegación.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">audio.play() / pause()</td>
+                                    <td>Reproduce o pausa el elemento &lt;audio&gt;. Reproductor de música del index.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">audio.paused</td>
+                                    <td>Propiedad booleana. <code>true</code> si el audio está pausado. Controla el texto del botón.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="gs-code">audio.volume</td>
+                                    <td>Volumen del audio (0.0 a 1.0). Fijado en 0.1 al cargar como protección auditiva.</td>
+                                    <td><span class="gs-page-tag tag-idx">IDX</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div><!-- /sec-js -->
+
+            </div><!-- /gs-content -->
+
+        </div><!-- /gs-layout -->
+
+        <!-- Navegación -->
+        <div class="gs-footer-nav">
+            <a href="index.html" class="gs-btn-return">[← VOLVER A INDEX.HTML]</a>
+            <a href="flexbox.html" class="gs-btn-return">[→ VER FLEXBOX.EXE]</a>
+            <a href="grid.html" class="gs-btn-return">[→ VER GRID+FLEX.EXE]</a>
+            <a href="tipografias.html" class="gs-btn-return">[→ VER TIPOGRAFIAS.EXE]</a>
+            <a href="archivo-sonoro.html" class="gs-btn-return">[→ VER ARCHIVO SONORO.EXE]</a>
+        </div>
+
+    </main>
+
+</div><!-- /.wrapper -->
+
+</body>
+</html>

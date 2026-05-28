@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~* [ WORK.ZIP - TIPOGRAFIAS.EXE ] *~</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/tipografias.css">
+</head>
+<body>
+
+<div class="wrapper wrapper-typo">
+
+    <!-- ▸ HEADER -->
+    <header class="manga-box header-typo">
+        <div class="ty-banner">
+            <div class="ty-banner-text">
+                <h1 class="ty-banner-title">[ TIPOGRAFIAS.EXE ]</h1>
+                <p class="ty-banner-sub">// work.zip/typography</p>
+            </div>
+            <div class="ty-banner-img">
+                <img src="media/Imagenes/tipografias/spiderman 1.jpg" alt="Spider-Man" class="ty-banner-photo" id="ty-img-banner">
+                <span class="ty-img-label">[IMG_01]</span>
+            </div>
+        </div>
+        <div class="marquee-bar">
+            <marquee scrollamount="5">CSS TYPOGRAPHY // 29 PROPIEDADES // ¡TU AMIGABLE VECINO ARÁCNIDO! // SPIDER-MAN: INTO THE SPIDER-VERSE // BY LEGANS</marquee>
+        </div>
+    </header>
+
+    <!-- ▸ CONTENIDO -->
+    <main class="manga-box main-typo">
+
+        <!-- Intro -->
+        <div class="ty-intro">
+            <div class="ty-intro-tags">
+                <span class="ty-tag tag-curso">CURSO</span>
+                <span class="ty-tag tag-tipo">CSS TYPOGRAPHY</span>
+                <span class="ty-tag tag-props">29 PROPS</span>
+            </div>
+            <div class="ty-intro-text">
+                <p>Práctica de las propiedades tipográficas de CSS.</p>
+                <p>Utilizando de referencia a <span>Spider-Man</span> because i liked <3 </p>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             GRUPO 1 — font-family
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> font-family</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 1</span><span class="ty-card-num">#ff-serif</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-family: Georgia, serif;</span>
+                        <p class="ty-desc">Fuente con serifas. Remates en los extremos de cada trazo. Clásica, editorial, formal.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ff-serif">Amazing Fantasy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 2</span><span class="ty-card-num">#ff-sans</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-family: Arial, sans-serif;</span>
+                        <p class="ty-desc">Sin serifas. Trazo limpio y uniforme. Moderno, legible en pantalla, neutro.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ff-sans">Amazing Fantasy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 3</span><span class="ty-card-num">#ff-mono</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-family: "Courier New", monospace;</span>
+                        <p class="ty-desc">Monoespaciada. Cada carácter ocupa el mismo ancho. Ideal para código y estética retro.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ff-mono">Amazing Fantasy</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 2.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 2 — font-size
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> font-size</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 4</span><span class="ty-card-num">#fs-px</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-size: 32px;</span>
+                        <p class="ty-desc">Píxeles. Tamaño fijo absoluto. No escala con preferencias del usuario ni el contenedor.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fs-px">¡THWIP!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 5</span><span class="ty-card-num">#fs-rem</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-size: 2.5rem;</span>
+                        <p class="ty-desc">Relativo al tamaño raíz (html). Escala con preferencias del sistema. Más accesible.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fs-rem">¡THWIP!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 6</span><span class="ty-card-num">#fs-em</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-size: 1.8em;</span>
+                        <p class="ty-desc">Relativo al tamaño del elemento padre. Se acumula en elementos anidados.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fs-em">¡THWIP!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 7</span><span class="ty-card-num">#fs-clamp</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-size: clamp(1rem, 4vw, 2.5rem);</span>
+                        <p class="ty-desc">Tipografía fluida. Mínimo, valor ideal y máximo. Se adapta al ancho del viewport.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fs-clamp">¡THWIP!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 3.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 3 — font-weight
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> font-weight</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 8</span><span class="ty-card-num">#fw-100</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-weight: 100;</span>
+                        <p class="ty-desc">Thin / Hairline. El trazo más delgado posible. Elegante, frágil, ligero.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fw-100 ty-fw-demo">SPIDER</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 9</span><span class="ty-card-num">#fw-400</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-weight: 400;</span>
+                        <p class="ty-desc">Normal / Regular. El peso estándar de lectura. Valor por defecto del navegador.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fw-400 ty-fw-demo">SPIDER</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 10</span><span class="ty-card-num">#fw-700</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-weight: 700;</span>
+                        <p class="ty-desc">Bold. Negrita estándar. Énfasis, títulos, llamadas a la acción.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fw-700 ty-fw-demo">SPIDER</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 11</span><span class="ty-card-num">#fw-900</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-weight: 900;</span>
+                        <p class="ty-desc">Black / Heavy. El trazo más grueso. Impactante, héroe, portada de cómic.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fw-900 ty-fw-demo">SPIDER</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 4.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 4 — font-style & font-variant
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> font-style & font-variant</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 12</span><span class="ty-card-num">#fst-italic</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-style: italic;</span>
+                        <p class="ty-desc">Cursiva. Inclinación tipográfica para énfasis, diálogos o pensamientos internos.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fst-italic">"...con un gran poder<br>viene una gran responsabilidad."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 13</span><span class="ty-card-num">#fst-oblique</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-style: oblique 20deg;</span>
+                        <p class="ty-desc">Oblicua. Inclinación artificial del trazo normal, sin usar la versión italic del tipo.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fst-oblique">"...con un gran poder<br>viene una gran responsabilidad."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 14</span><span class="ty-card-num">#fv-smallcaps</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">font-variant: small-caps;</span>
+                        <p class="ty-desc">Versalitas. Las minúsculas se muestran como mayúsculas reducidas. Estilo editorial.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-fv-smallcaps">Miles Morales</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 5.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 5 — text-align
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> text-align</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 15</span><span class="ty-card-num">#ta-left</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-align: left;</span>
+                        <p class="ty-desc">Alineado a la izquierda. Lectura natural en idiomas LTR. Valor por defecto.</p>
+                        <div class="ty-panel ty-panel-tall">
+                            <p class="ty-text ty-small ty-ta-left">¡Tu amigable vecino arácnido está aquí para salvar el día! No importa el peligro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 16</span><span class="ty-card-num">#ta-center</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-align: center;</span>
+                        <p class="ty-desc">Centrado. Ideal para títulos, poemas, portadas y elementos decorativos.</p>
+                        <div class="ty-panel ty-panel-tall">
+                            <p class="ty-text ty-small ty-ta-center">¡Tu amigable vecino arácnido está aquí para salvar el día! No importa el peligro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 17</span><span class="ty-card-num">#ta-right</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-align: right;</span>
+                        <p class="ty-desc">Alineado a la derecha. Útil para precios, fechas, firmas o textos RTL.</p>
+                        <div class="ty-panel ty-panel-tall">
+                            <p class="ty-text ty-small ty-ta-right">¡Tu amigable vecino arácnido está aquí para salvar el día! No importa el peligro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 18</span><span class="ty-card-num">#ta-justify</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-align: justify;</span>
+                        <p class="ty-desc">Justificado. Ambos márgenes alineados. Ajusta el espaciado entre palabras.</p>
+                        <div class="ty-panel ty-panel-tall">
+                            <p class="ty-text ty-small ty-ta-justify">¡Tu amigable vecino arácnido está aquí para salvar el día! No importa el peligro.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 6.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 6 — text-decoration
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> text-decoration</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 19</span><span class="ty-card-num">#td-underline</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-decoration: underline;</span>
+                        <p class="ty-desc">Subrayado. Línea bajo el texto. Se usa en links o énfasis tipográfico.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-td-underline">Peter Parker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 20</span><span class="ty-card-num">#td-overline</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-decoration: overline;</span>
+                        <p class="ty-desc">Línea sobre el texto. Poco común; útil para anotaciones o elementos especiales.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-td-overline">Peter Parker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 21</span><span class="ty-card-num">#td-through</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-decoration: line-through;</span>
+                        <p class="ty-desc">Tachado. Línea a través del texto. Indica eliminación, precio anterior o ironía.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-td-through">Peter Parker</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 7.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 7 — text-transform
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> text-transform</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 22</span><span class="ty-card-num">#tt-upper</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-transform: uppercase;</span>
+                        <p class="ty-desc">Todo en mayúsculas. El HTML puede estar en minúsculas; CSS lo transforma visualmente.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-tt-upper">amazing fantasy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 23</span><span class="ty-card-num">#tt-lower</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-transform: lowercase;</span>
+                        <p class="ty-desc">Todo en minúsculas. Convierte incluso mayúsculas del HTML a lowercase.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-tt-lower">AMAZING FANTASY</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 24</span><span class="ty-card-num">#tt-cap</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-transform: capitalize;</span>
+                        <p class="ty-desc">Primera letra de cada palabra en mayúscula. Útil para nombres y títulos.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-tt-cap">the amazing spider-man</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 8.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 8 — letter-spacing & word-spacing
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> letter-spacing & word-spacing</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 25</span><span class="ty-card-num">#ls-tight</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">letter-spacing: -0.05em;</span>
+                        <p class="ty-desc">Tracking negativo. Las letras se acercan. Usado en títulos grandes para densidad visual.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ls-tight">SPIDER-MAN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 26</span><span class="ty-card-num">#ls-wide</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">letter-spacing: 0.3em;</span>
+                        <p class="ty-desc">Tracking positivo. Las letras se separan. Elegante en caps, logotipos y subtítulos.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ls-wide">SPIDER-MAN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 27</span><span class="ty-card-num">#ws-wide</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">word-spacing: 1.5em;</span>
+                        <p class="ty-desc">Separación entre palabras. Distinto al letter-spacing: afecta solo los espacios.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ws-wide">Into The Spider Verse</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="ty-img-sep">
+            <img src="media/Imagenes/tipografias/spiderman 9.jpg" alt="Spider-Man" class="ty-sep-img">
+        </div>
+
+        <!-- ================================================================
+             GRUPO 9 — line-height & text-shadow
+             ================================================================ -->
+        <div class="ty-group">
+            <span class="ty-group-title">> line-height & text-shadow</span>
+            <div class="ty-grid">
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 28</span><span class="ty-card-num">#lh-tight</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">line-height: 1;</span>
+                        <p class="ty-desc">Interlineado ajustado. Las líneas se tocan o superponen. Impacto visual en títulos.</p>
+                        <div class="ty-panel ty-panel-tall">
+                            <p class="ty-text ty-small ty-lh-tight">Con un gran poder<br>viene una gran<br>responsabilidad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ty-card">
+                    <div class="ty-card-header"><span>Ejercicio 29</span><span class="ty-card-num">#ts-comic</span></div>
+                    <div class="ty-card-body">
+                        <span class="ty-prop-code">text-shadow:<br>3px 3px 0 #ff0000,<br>6px 6px 0 #0000ff;</span>
+                        <p class="ty-desc">Sombras múltiples apiladas. Sin desenfoque. Efecto risograph / impresión cómic.</p>
+                        <div class="ty-panel">
+                            <p class="ty-text ty-ts-comic">Spider-Man</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Botones de regreso -->
+        <div class="ty-footer-nav">
+            <a href="index.html" class="ty-btn-return">[← VOLVER A INDEX.HTML]</a>
+            <a href="flexbox.html" class="ty-btn-return">[→ VER FLEXBOX.EXE]</a>
+            <a href="grid.html" class="ty-btn-return">[→ VER GRID+FLEX.EXE]</a>
+            <a href="archivo-sonoro.html" class="ty-btn-return">[→ VER ARCHIVO SONORO.EXE]</a>
+        </div>
+
+    </main>
+
+</div><!-- /.wrapper -->
+
+</body>
+</html>

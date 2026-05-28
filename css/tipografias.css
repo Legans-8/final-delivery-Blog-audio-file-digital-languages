@@ -1,0 +1,523 @@
+/* ============================================================
+   TIPOGRAFIAS.CSS — LEGANS BLOG
+   Estilos exclusivos de tipografias.html.
+   Requiere: global.css
+   ============================================================
+
+   1.  Wrapper & estructura
+   2.  Banner
+   3.  Intro
+   4.  Grupos y grilla
+   5.  Tarjetas de ejercicio
+   6.  Panel de demostración (ty-panel)
+   7.  Texto base de demos (ty-text)
+   8.  Grupo 1: font-family
+   9.  Grupo 2: font-size
+   10. Grupo 3: font-weight
+   11. Grupo 4: font-style & font-variant
+   12. Grupo 5: text-align
+   13. Grupo 6: text-decoration
+   14. Grupo 7: text-transform
+   15. Grupo 8: letter-spacing & word-spacing
+   16. Grupo 9: line-height & text-shadow
+   17. Navegación & regreso
+   18. Media Queries
+
+   ============================================================ */
+
+
+/* ============================================================
+   1. WRAPPER & ESTRUCTURA
+   ============================================================ */
+
+.wrapper-typo {
+    margin-top: 20px;
+}
+
+.header-typo {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.main-typo {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+
+/* ============================================================
+   2. BANNER
+   ============================================================ */
+
+.ty-banner {
+    width: 100%;
+    height: 180px;
+    background-color: var(--bg-color);
+    border-bottom: 3px solid var(--border-color);
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.ty-banner-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 25px;
+    gap: 8px;
+}
+
+.ty-banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.ty-banner-sub {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+}
+
+.ty-banner-img {
+    width: 45%;
+    height: 100%;
+    border-left: 3px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+    background: repeating-linear-gradient(
+        45deg,
+        #f0f0f0 0, #f0f0f0 4px,
+        #fff 4px, #fff 12px
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ty-banner-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(100%) contrast(130%);
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+/* Visible cuando no hay imagen cargada */
+.ty-img-label {
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    color: #bbb;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.ty-banner-photo[src=""] ~ .ty-img-label,
+.ty-banner-photo:not([src]) ~ .ty-img-label {
+    display: block;
+}
+
+.ty-banner-photo[src]:not([src=""]) {
+    display: block;
+}
+
+.ty-banner-photo[src]:not([src=""]) ~ .ty-img-label {
+    display: none;
+}
+
+
+/* ============================================================
+   3. INTRO
+   ============================================================ */
+
+.ty-intro {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.ty-intro-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.ty-tag {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.tag-curso { background-color: #000; }
+.tag-tipo  { background-color: #555; }
+.tag-props { background-color: #222; }
+
+.ty-intro-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.ty-intro-text p {
+    margin-bottom: 6px;
+}
+
+
+/* ============================================================
+   4. GRUPOS Y GRILLA
+   ============================================================ */
+
+.ty-group {
+    margin-bottom: 35px;
+}
+
+.ty-group-title {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 2px solid var(--border-color);
+}
+
+.ty-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+/* ============================================================
+   5. TARJETAS DE EJERCICIO
+   ============================================================ */
+
+.ty-card {
+    background-color: var(--bg-color);
+    border: 3px solid var(--border-color);
+    box-shadow: 5px 5px 0px var(--border-color);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    overflow: hidden;
+}
+
+.ty-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #000;
+}
+
+.ty-card-header {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ty-card-num {
+    opacity: 0.6;
+    font-size: 0.65rem;
+}
+
+.ty-card-body {
+    padding: 12px;
+}
+
+.ty-prop-code {
+    display: inline-block;
+    background: #f0f0f0;
+    border: 2px solid var(--border-color);
+    padding: 3px 8px;
+    font-family: "Courier New", monospace;
+    font-size: 0.72rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+    white-space: pre-line;
+    line-height: 1.5;
+}
+
+.ty-desc {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+/* ============================================================
+   6. PANEL DE DEMOSTRACIÓN
+   ============================================================ */
+
+/* Fondo punteado tipo impresión cómic (halftone) */
+.ty-panel {
+    border: 2px solid var(--border-color);
+    min-height: 100px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.ty-panel-tall {
+    min-height: 130px;
+    align-items: flex-start;
+}
+
+
+/* ============================================================
+   7. TEXTO BASE DE DEMOS
+   ============================================================ */
+
+.ty-text {
+    font-family: "Courier New", monospace;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    line-height: 1.25;
+    margin: 0;
+    width: 100%;
+}
+
+.ty-small {
+    font-size: 0.82rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.ty-fw-demo {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05em;
+}
+
+
+/* ============================================================
+   8. GRUPO 1: font-family
+   ============================================================ */
+
+.ty-ff-serif  { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; }
+.ty-ff-sans   { font-family: Arial, Helvetica, sans-serif; font-size: 1.4rem; }
+.ty-ff-mono   { font-family: "Courier New", Courier, monospace; font-size: 1.4rem; }
+
+
+/* ============================================================
+   9. GRUPO 2: font-size
+   ============================================================ */
+
+.ty-fs-px    { font-size: 32px; }
+.ty-fs-rem   { font-size: 2.5rem; }
+.ty-fs-em    { font-size: 1.8em; }
+.ty-fs-clamp { font-size: clamp(1rem, 4vw, 2.5rem); }
+
+
+/* ============================================================
+   10. GRUPO 3: font-weight
+   ============================================================ */
+
+.ty-fw-100 { font-weight: 100; }
+.ty-fw-400 { font-weight: 400; }
+.ty-fw-700 { font-weight: 700; }
+.ty-fw-900 { font-weight: 900; }
+
+
+/* ============================================================
+   11. GRUPO 4: font-style & font-variant
+   ============================================================ */
+
+.ty-fst-italic  {
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ty-fst-oblique {
+    font-style: oblique 20deg;
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ty-fv-smallcaps {
+    font-variant: small-caps;
+    font-size: 1.6rem;
+}
+
+
+/* ============================================================
+   12. GRUPO 5: text-align
+   ============================================================ */
+
+.ty-ta-left    { text-align: left; }
+.ty-ta-center  { text-align: center; }
+.ty-ta-right   { text-align: right; }
+.ty-ta-justify { text-align: justify; }
+
+
+/* ============================================================
+   13. GRUPO 6: text-decoration
+   ============================================================ */
+
+.ty-td-underline { text-decoration: underline; text-underline-offset: 4px; }
+.ty-td-overline  { text-decoration: overline; }
+.ty-td-through   { text-decoration: line-through; }
+
+
+/* ============================================================
+   14. GRUPO 7: text-transform
+   ============================================================ */
+
+.ty-tt-upper { text-transform: uppercase; }
+.ty-tt-lower { text-transform: lowercase; }
+.ty-tt-cap   { text-transform: capitalize; }
+
+
+/* ============================================================
+   15. GRUPO 8: letter-spacing & word-spacing
+   ============================================================ */
+
+.ty-ls-tight { letter-spacing: -0.06em; }
+.ty-ls-wide  { letter-spacing: 0.3em; font-size: 1.1rem; }
+.ty-ws-wide  { word-spacing: 1.2em; font-size: 1rem; }
+
+
+/* ============================================================
+   16. GRUPO 9: line-height & text-shadow
+   ============================================================ */
+
+.ty-lh-tight {
+    line-height: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sombra doble sin blur — efecto impresión cómic risograph */
+.ty-ts-comic {
+    text-shadow:
+        3px 3px 0 #e00,
+        6px 6px 0 #00e;
+    font-size: 2rem;
+}
+
+
+/* ============================================================
+   17. NAVEGACIÓN & REGRESO
+   ============================================================ */
+
+.ty-footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 10px 10px;
+}
+
+.ty-btn-return {
+    display: inline-block;
+    padding: 6px 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 2px solid var(--border-color);
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.ty-btn-return:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+
+/* ============================================================
+   18. SEPARADORES DE IMAGEN
+   ============================================================ */
+
+.ty-img-sep {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border: 3px solid var(--border-color);
+    box-shadow: 5px 5px 0px var(--border-color);
+    margin-bottom: 20px;
+}
+
+.ty-sep-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: grayscale(100%) contrast(140%);
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.ty-img-sep:hover .ty-sep-img {
+    transform: scale(1.04);
+}
+
+
+/* ============================================================
+   19. MEDIA QUERIES
+   ============================================================ */
+
+@media (max-width: 700px) {
+    .ty-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ty-banner {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .ty-banner-img {
+        width: 100%;
+        height: 120px;
+        border-left: none;
+        border-top: 3px solid var(--border-color);
+    }
+
+    .ty-banner-title {
+        font-size: 1.4rem;
+    }
+
+    .ty-intro {
+        flex-direction: column;
+    }
+
+    .ty-intro-tags {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

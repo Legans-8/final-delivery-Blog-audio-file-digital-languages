@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~* [ WORK.ZIP - FLEXBOX.EXE ] *~</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+</head>
+<body>
+
+<div class="wrapper wrapper-flexbox">
+
+    <!-- ▸ HEADER -->
+    <header class="manga-box header-flexbox">
+        <div class="fb-banner">
+            <h1 class="fb-banner-title">[ FLEXBOX.EXE ]</h1>
+            <p class="fb-banner-sub">// work.zip/flexbox</p>
+        </div>
+        <div class="marquee-bar">
+            <marquee scrollamount="4">PRACTICA CSS FLEXBOX // 24 PROPIEDADES // THE AMAZING DIGITAL CIRCUS // BY LEGANS</marquee>
+        </div>
+    </header>
+
+    <!-- ▸ CONTENIDO -->
+    <main class="manga-box main-flexbox">
+
+        <!-- Intro del trabajo -->
+        <div class="fb-intro">
+            <div>
+                <span class="fb-tag tag-curso">CURSO</span>&nbsp;
+                <span class="fb-tag tag-tipo">CSS LAYOUT</span>&nbsp;
+                <span class="fb-tag tag-props">24 PROPS</span>
+            </div>
+            <div class="fb-intro-text">
+                <p>Práctica de las 24 propiedades principales del modelo de caja flexible de CSS.</p>
+                <p>Temática: <b>The Amazing Digital Circus</b> — cada item es un personaje del circo.</p>
+            </div>
+        </div>
+
+        <!-- GRUPO 1: flex-direction -->
+        <div class="fb-group">
+            <span class="fb-group-title">> flex-direction</span>
+            <div class="fb-grid">
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 1</span><span class="fb-card-num">#fd-row</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-direction: row;</span>
+                        <p class="fb-desc">Eje principal horizontal. Elementos en fila de izquierda a derecha. Comportamiento por defecto.</p>
+                        <div class="fb-stage fd-row">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 2</span><span class="fb-card-num">#fd-row-reverse</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-direction: row-reverse;</span>
+                        <p class="fb-desc">Eje horizontal invertido. Los elementos se alinean de derecha a izquierda.</p>
+                        <div class="fb-stage fd-row-reverse">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 3</span><span class="fb-card-num">#fd-column</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-direction: column;</span>
+                        <p class="fb-desc">Eje principal vertical. Los elementos se apilan de arriba hacia abajo.</p>
+                        <div class="fb-stage fd-column">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 4</span><span class="fb-card-num">#fd-column-reverse</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-direction: column-reverse;</span>
+                        <p class="fb-desc">Eje vertical invertido. Los elementos se apilan de abajo hacia arriba.</p>
+                        <div class="fb-stage fd-column-reverse">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GRUPO 2: justify-content -->
+        <div class="fb-group">
+            <span class="fb-group-title">> justify-content</span>
+            <div class="fb-grid">
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 5</span><span class="fb-card-num">#jc-start</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">justify-content: flex-start;</span>
+                        <p class="fb-desc">Agrupa todos los elementos al inicio del eje principal. En fila, a la izquierda.</p>
+                        <div class="fb-stage jc-start">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 6</span><span class="fb-card-num">#jc-end</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">justify-content: flex-end;</span>
+                        <p class="fb-desc">Empuja todos los elementos hacia el final del eje principal, espacio libre al inicio.</p>
+                        <div class="fb-stage jc-end">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 7</span><span class="fb-card-num">#jc-center</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">justify-content: center;</span>
+                        <p class="fb-desc">Centra todos los elementos en el eje principal del contenedor.</p>
+                        <div class="fb-stage jc-center">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 8</span><span class="fb-card-num">#jc-between</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">justify-content: space-between;</span>
+                        <p class="fb-desc">Primero pegado al inicio, último al final. Espacio restante repartido entre ellos.</p>
+                        <div class="fb-stage jc-between">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 9</span><span class="fb-card-num">#jc-around</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">justify-content: space-around;</span>
+                        <p class="fb-desc">Espacio igual a cada lado de cada elemento. El espacio entre elementos centrales es el doble que en bordes.</p>
+                        <div class="fb-stage jc-around">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 10</span><span class="fb-card-num">#jc-evenly</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">justify-content: space-evenly;</span>
+                        <p class="fb-desc">La separación entre elementos y con los bordes es exactamente la misma en todos los puntos.</p>
+                        <div class="fb-stage jc-evenly">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GRUPO 3: align-items -->
+        <div class="fb-group">
+            <span class="fb-group-title">> align-items</span>
+            <div class="fb-grid">
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 11</span><span class="fb-card-num">#ai-start</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-items: flex-start;</span>
+                        <p class="fb-desc">Alinea en la parte superior/inicio del eje cruzado (el opuesto a flex-direction).</p>
+                        <div class="fb-stage jc-center ai-start">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 12</span><span class="fb-card-num">#ai-end</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-items: flex-end;</span>
+                        <p class="fb-desc">Empuja y alinea todos los elementos en la parte inferior/final del eje cruzado.</p>
+                        <div class="fb-stage jc-center ai-end">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 13</span><span class="fb-card-num">#ai-center</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-items: center;</span>
+                        <p class="fb-desc">Centra los elementos en el eje cruzado (verticalmente en una fila).</p>
+                        <div class="fb-stage jc-center ai-center">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 14</span><span class="fb-card-num">#ai-baseline</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-items: baseline;</span>
+                        <p class="fb-desc">Alinea la línea base del texto de todos los ítems, sin importar el tamaño de fuente.</p>
+                        <div class="fb-stage jc-center ai-baseline">
+                            <div class="fb-item" style="font-size:2rem; padding-top:8px; color:transparent;">1</div>
+                            <div class="fb-item" style="font-size:0.9rem; color:transparent;">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 15</span><span class="fb-card-num">#ai-stretch</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-items: stretch;</span>
+                        <p class="fb-desc">Sin altura definida, los ítems se estiran para ocupar todo el espacio del eje cruzado.</p>
+                        <div class="fb-stage jc-center ai-stretch">
+                            <div class="fb-item">1</div><div class="fb-item">2</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GRUPO 4: flex-wrap -->
+        <div class="fb-group">
+            <span class="fb-group-title">> flex-wrap</span>
+            <div class="fb-grid">
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 16</span><span class="fb-card-num">#fw-nowrap</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-wrap: nowrap;</span>
+                        <p class="fb-desc">Por defecto. Todos los elementos en una sola línea, reduciéndose si el contenedor es pequeño.</p>
+                        <div class="fb-stage fw-nowrap" style="width:180px; margin:0 auto;">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 17</span><span class="fb-card-num">#fw-wrap</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-wrap: wrap;</span>
+                        <p class="fb-desc">Los elementos saltan a una nueva línea hacia abajo si no caben en el espacio horizontal.</p>
+                        <div class="fb-stage fw-wrap">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 18</span><span class="fb-card-num">#fw-wrap-reverse</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">flex-wrap: wrap-reverse;</span>
+                        <p class="fb-desc">Igual que wrap, pero las nuevas líneas se crean hacia arriba en lugar de hacia abajo.</p>
+                        <div class="fb-stage fw-wrap-reverse">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- GRUPO 5: align-content -->
+        <div class="fb-group">
+            <span class="fb-group-title">> align-content</span>
+            <p style="font-size:0.75rem; color:#666; margin-bottom:12px; font-family:'Courier New',monospace;">// Solo actúa cuando hay múltiples líneas (requiere flex-wrap)</p>
+            <div class="fb-grid">
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 19</span><span class="fb-card-num">#ac-start</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-content: flex-start;</span>
+                        <p class="fb-desc">Agrupa todas las líneas en la parte superior del contenedor.</p>
+                        <div class="fb-stage ac-start">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div><div class="fb-item">6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 20</span><span class="fb-card-num">#ac-end</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-content: flex-end;</span>
+                        <p class="fb-desc">Agrupa todas las líneas en la parte inferior del contenedor.</p>
+                        <div class="fb-stage ac-end">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div><div class="fb-item">6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 21</span><span class="fb-card-num">#ac-center</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-content: center;</span>
+                        <p class="fb-desc">Toma todas las líneas como un bloque y las centra verticalmente.</p>
+                        <div class="fb-stage ac-center">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div><div class="fb-item">6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 22</span><span class="fb-card-num">#ac-between</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-content: space-between;</span>
+                        <p class="fb-desc">Primera línea al tope, última a la base. Espacio libre repartido entre las líneas intermedias.</p>
+                        <div class="fb-stage ac-between">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div><div class="fb-item">6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 23</span><span class="fb-card-num">#ac-around</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-content: space-around;</span>
+                        <p class="fb-desc">Espacio vertical equitativo alrededor de cada línea de elementos.</p>
+                        <div class="fb-stage ac-around">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div><div class="fb-item">6</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-card">
+                    <div class="fb-card-header"><span>Ejercicio 24</span><span class="fb-card-num">#ac-stretch</span></div>
+                    <div class="fb-card-body">
+                        <span class="fb-prop-code">align-content: stretch;</span>
+                        <p class="fb-desc">Por defecto. Sin altura fija, las líneas se estiran para llenar el espacio sobrante.</p>
+                        <div class="fb-stage ac-stretch">
+                            <div class="fb-item">1</div><div class="fb-item">2</div><div class="fb-item">3</div><div class="fb-item">4</div><div class="fb-item">5</div><div class="fb-item">6</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Botón de regreso -->
+        <div class="fb-footer-nav">
+            <a href="index.html" class="fb-btn-return">[← VOLVER A INDEX.HTML]</a>
+            <a href="grid.html" class="fb-btn-return">[→ VER GRID+FLEX.EXE]</a>
+            <a href="archivo-sonoro.html" class="fb-btn-return">[→ VER ARCHIVO SONORO.EXE]</a>
+        </div>
+
+    </main>
+
+</div><!-- /.wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+/* ============================================================
+   GLOSARIO.CSS — LEGANS BLOG
+   Estilos exclusivos de glosario.html.
+   Requiere: global.css
+   ============================================================
+
+   1.  Wrapper & estructura
+   2.  Banner
+   3.  Intro & leyenda
+   4.  Secciones tecnológicas
+   5.  Subsecciones
+   6.  Tabla de glosario
+   7.  Tags de página
+   8.  Navegación
+   9.  Media Queries
+
+   ============================================================ */
+
+
+/* ============================================================
+   1. WRAPPER & ESTRUCTURA
+   ============================================================ */
+
+.wrapper-glos {
+    margin-top: 20px;
+}
+
+.header-glos {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.main-glos {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+
+/* ============================================================
+   2. BANNER
+   ============================================================ */
+
+.gs-banner {
+    width: 100%;
+    background-color: var(--bg-color);
+    border-bottom: 3px solid var(--border-color);
+    padding: 20px 25px 15px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.gs-banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.gs-banner-sub {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/* ============================================================
+   3. INTRO & LEYENDA
+   ============================================================ */
+
+.gs-intro {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.gs-intro-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.gs-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.tag-html { background-color: #000; }
+.tag-css  { background-color: #333; }
+.tag-js   { background-color: #666; }
+
+.gs-intro-text {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.gs-intro-text p { margin-bottom: 4px; }
+
+.gs-legend {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 12px;
+    margin-bottom: 25px;
+    padding: 10px 12px;
+    border: 2px solid var(--border-color);
+    background: #f8f8f8;
+    font-size: 0.72rem;
+}
+
+.gs-legend-sep {
+    color: #444;
+    margin-right: 4px;
+}
+
+
+/* ============================================================
+   4. LAYOUT CON ASIDE STICKY
+   ============================================================ */
+
+.gs-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.gs-nav-aside {
+    flex-shrink: 0;
+    width: 160px;
+    position: sticky;
+    top: 15px;
+}
+
+.gs-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ── Nav aside ── */
+
+.gs-nav {
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.gs-nav-title {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 6px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.gs-nav-section {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.gs-nav-section:last-child {
+    border-bottom: none;
+}
+
+.gs-nav-section-label {
+    display: block;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.gs-nav-html-label { background-color: #000; }
+.gs-nav-css-label  { background-color: #222; }
+.gs-nav-js-label   { background-color: #444; }
+
+.gs-nav-section-label:hover {
+    filter: invert(1) brightness(2);
+}
+
+.gs-nav-link {
+    display: block;
+    padding: 3px 10px 3px 18px;
+    font-size: 0.68rem;
+    color: #555;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+
+.gs-nav-link:hover {
+    background-color: #f0f0f0;
+    border-left-color: var(--border-color);
+    color: #000;
+}
+
+.gs-nav-img-wrap {
+    width: 100%;
+    margin: 90px auto 0;
+    border: 2px solid var(--border-color);
+    overflow: hidden;
+}
+
+.gs-nav-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%) contrast(90%);
+    transform: scale(1.12);
+}
+
+
+/* ============================================================
+   5. SECCIONES TECNOLÓGICAS
+   ============================================================ */
+
+.gs-section {
+    margin-bottom: 40px;
+}
+
+.gs-section-header {
+    color: var(--bg-color);
+    padding: 8px 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border: 2px solid var(--border-color);
+}
+
+.gs-html-header { background-color: #000; }
+.gs-css-header  { background-color: #222; }
+.gs-js-header   { background-color: #444; }
+
+
+/* ============================================================
+   5. SUBSECCIONES
+   ============================================================ */
+
+.gs-subsection {
+    margin-bottom: 22px;
+}
+
+.gs-sub-title {
+    font-size: 0.78rem;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--border-color);
+    padding: 2px 8px;
+}
+
+
+/* ============================================================
+   6. TABLA DE GLOSARIO
+   ============================================================ */
+
+.gs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    font-size: 0.77rem;
+}
+
+.gs-table thead tr {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.gs-table th {
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.gs-table td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+    line-height: 1.4;
+    color: #222;
+}
+
+.gs-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.gs-table tbody tr:hover {
+    background-color: #000;
+}
+
+.gs-table tbody tr:hover td {
+    color: #fff;
+    border-bottom-color: #333;
+}
+
+.gs-table tbody tr:hover .gs-code {
+    background: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+.gs-table tbody tr:hover .gs-page-tag {
+    filter: invert(1);
+}
+
+.gs-table tbody tr:hover td code {
+    background: #333;
+    border-color: #555;
+    color: #eee;
+}
+
+.gs-code {
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border: 1px solid #ccc;
+}
+
+.gs-table td code {
+    font-family: "Courier New", monospace;
+    font-size: 0.72rem;
+    background: #eee;
+    padding: 1px 4px;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+.gs-table td:first-child,
+.gs-table th:first-child {
+    width: 230px;
+}
+
+.gs-table td:last-child,
+.gs-table th:last-child {
+    width: 110px;
+    white-space: nowrap;
+}
+
+
+/* ============================================================
+   7. TAGS DE PÁGINA
+   ============================================================ */
+
+.gs-page-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 2px 5px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin: 1px;
+}
+
+.tag-all { background-color: #000; }
+.tag-idx { background-color: #333; }
+.tag-as  { background-color: #555; }
+.tag-fb  { background-color: #666; }
+.tag-gd  { background-color: #777; }
+.tag-ty  { background-color: #999; }
+
+
+/* ============================================================
+   8. NAVEGACIÓN
+   ============================================================ */
+
+.gs-footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 10px 10px;
+}
+
+.gs-btn-return {
+    display: inline-block;
+    padding: 6px 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 2px solid var(--border-color);
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.gs-btn-return:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+
+/* ============================================================
+   9. MEDIA QUERIES
+   ============================================================ */
+
+@media (max-width: 800px) {
+    .gs-layout {
+        flex-direction: column;
+    }
+
+    .gs-nav-aside {
+        width: 100%;
+        position: static;
+    }
+
+    .gs-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gs-nav-title {
+        width: 100%;
+    }
+
+    .gs-nav-section {
+        flex: 1;
+        min-width: 120px;
+        border-bottom: none;
+        border-right: 2px solid var(--border-color);
+    }
+
+    .gs-nav-section:last-child {
+        border-right: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .gs-table {
+        font-size: 0.7rem;
+    }
+
+    .gs-table td:first-child,
+    .gs-table th:first-child {
+        width: 150px;
+    }
+
+    .gs-table td:last-child,
+    .gs-table th:last-child {
+        width: 75px;
+    }
+
+    .gs-banner {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .gs-legend {
+        gap: 4px 8px;
+    }
+
+    .gs-code {
+        white-space: normal;
+    }
+}

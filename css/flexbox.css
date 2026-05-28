@@ -1,0 +1,314 @@
+/* ============================================================
+   FLEXBOX.CSS — LEGANS BLOG
+   Estilos exclusivos de flexbox.html.
+   Requiere: global.css
+   ============================================================
+
+   1.  Wrapper & estructura de página
+   2.  Banner de cabecera
+   3.  Intro / metadata
+   4.  Grupos de propiedades
+   5.  Tarjetas de ejercicio
+   6.  Escenario de demostración (fb-stage + fb-item)
+   7.  Clases de control Flexbox
+   8.  Navegación y regreso
+   9.  Media Queries
+
+   ============================================================ */
+
+
+/* ============================================================
+   1. WRAPPER & ESTRUCTURA DE PÁGINA
+   ============================================================ */
+
+.wrapper-flexbox {
+    margin-top: 20px;
+}
+
+.header-flexbox {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.main-flexbox {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+
+/* ============================================================
+   2. BANNER DE CABECERA
+   ============================================================ */
+
+.fb-banner {
+    width: 100%;
+    background-color: var(--bg-color);
+    border-bottom: 3px solid var(--border-color);
+    padding: 20px 25px 15px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.fb-banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.fb-banner-sub {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/* ============================================================
+   3. INTRO / METADATA
+   ============================================================ */
+
+.fb-intro {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.fb-tag {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.fb-tag.tag-curso  { background-color: #000; }
+.fb-tag.tag-tipo   { background-color: #555; }
+.fb-tag.tag-props  { background-color: #222; }
+
+.fb-intro-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.fb-intro-text p {
+    margin-bottom: 6px;
+}
+
+
+/* ============================================================
+   4. GRUPOS DE PROPIEDADES
+   ============================================================ */
+
+.fb-group {
+    margin-bottom: 35px;
+}
+
+.fb-group-title {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 2px solid var(--border-color);
+}
+
+.fb-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+/* ============================================================
+   5. TARJETAS DE EJERCICIO
+   ============================================================ */
+
+.fb-card {
+    background-color: var(--bg-color);
+    border: 3px solid var(--border-color);
+    box-shadow: 5px 5px 0px var(--border-color);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    overflow: hidden;
+}
+
+.fb-card:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #000;
+}
+
+.fb-card-header {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-card-num {
+    opacity: 0.6;
+    font-size: 0.65rem;
+}
+
+.fb-card-body {
+    padding: 12px;
+}
+
+.fb-prop-code {
+    display: inline-block;
+    background: #f0f0f0;
+    border: 2px solid var(--border-color);
+    padding: 3px 8px;
+    font-family: "Courier New", monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.fb-desc {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+/* ============================================================
+   6. ESCENARIO DE DEMOSTRACIÓN
+   ============================================================ */
+
+.fb-stage {
+    display: flex;
+    border: 2px solid var(--border-color);
+    height: 110px;
+    padding: 8px;
+    overflow: hidden;
+    background-color: #fafafa;
+    background-image:
+        linear-gradient(var(--border-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: -1px -1px;
+    background-blend-mode: multiply;
+}
+
+/* Ítem / personaje */
+.fb-item {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border: 3px solid var(--border-color);
+    background-color: #fff;
+    box-shadow: 3px 3px 0px var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: transparent;
+    user-select: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Ciclo de personajes del Digital Circus */
+.fb-item:nth-child(4n+1) { background-image: url('../media/Imagenes/flexbox/ponmi.jpg'); }
+.fb-item:nth-child(4n+2) { background-image: url('../media/Imagenes/flexbox/jax.png'); }
+.fb-item:nth-child(4n+3) { background-image: url('../media/Imagenes/flexbox/gangle.jpg'); }
+.fb-item:nth-child(4n)   { background-image: url('../media/Imagenes/flexbox/caine.png'); }
+
+
+/* ============================================================
+   7. CLASES DE CONTROL FLEXBOX
+   ============================================================ */
+
+.fd-row            { flex-direction: row; }
+.fd-row-reverse    { flex-direction: row-reverse; }
+.fd-column         { flex-direction: column; }
+.fd-column-reverse { flex-direction: column-reverse; }
+
+.jc-start          { justify-content: flex-start; }
+.jc-end            { justify-content: flex-end; }
+.jc-center         { justify-content: center; }
+.jc-between        { justify-content: space-between; }
+.jc-around         { justify-content: space-around; }
+.jc-evenly         { justify-content: space-evenly; }
+
+.ai-start          { align-items: flex-start; }
+.ai-end            { align-items: flex-end; }
+.ai-center         { align-items: center; }
+.ai-baseline       { align-items: baseline; }
+.ai-stretch        { align-items: stretch; }
+.ai-stretch .fb-item { height: auto; }
+
+.fw-nowrap         { flex-wrap: nowrap; }
+.fw-wrap           { flex-wrap: wrap; }
+.fw-wrap-reverse   { flex-wrap: wrap-reverse; }
+
+.ac-start          { flex-wrap: wrap; align-content: flex-start; }
+.ac-end            { flex-wrap: wrap; align-content: flex-end; }
+.ac-center         { flex-wrap: wrap; align-content: center; }
+.ac-between        { flex-wrap: wrap; align-content: space-between; }
+.ac-around         { flex-wrap: wrap; align-content: space-around; }
+.ac-stretch        { flex-wrap: wrap; align-content: stretch; }
+.ac-stretch .fb-item { height: auto; }
+
+
+/* ============================================================
+   8. NAVEGACIÓN Y REGRESO
+   ============================================================ */
+
+.fb-footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 10px 10px;
+}
+
+.fb-btn-return {
+    display: inline-block;
+    padding: 6px 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 2px solid var(--border-color);
+    transition: background 0.15s ease;
+}
+
+.fb-btn-return:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+
+/* ============================================================
+   9. MEDIA QUERIES
+   ============================================================ */
+
+@media (max-width: 700px) {
+    .fb-grid {
+        grid-template-columns: 1fr;
+    }
+}

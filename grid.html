@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~* [ WORK.ZIP - GRID+FLEX.EXE ] *~</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+
+<div class="wrapper wrapper-grid">
+
+    <!-- ▸ HEADER -->
+    <header class="manga-box header-grid">
+        <div class="gl-banner">
+            <h1 class="gl-banner-title">[ GRID+FLEX.EXE ]</h1>
+            <p class="gl-banner-sub">// work.zip/grid-layout</p>
+        </div>
+        <div class="marquee-bar">
+            <marquee scrollamount="4">PRACTICA CSS GRID + FLEXBOX // 7 EJERCICIOS // LAYOUTS BIDIMENSIONALES // BY LEGANS</marquee>
+        </div>
+    </header>
+
+    <!-- ▸ CONTENIDO -->
+    <main class="manga-box main-grid">
+
+        <!-- Intro -->
+        <div class="gl-intro">
+            <div>
+                <span class="gl-tag tag-curso">CURSO</span>&nbsp;
+                <span class="gl-tag tag-tipo">CSS LAYOUT</span>&nbsp;
+                <span class="gl-tag tag-num">7 EJERCICIOS</span>
+            </div>
+            <div class="gl-intro-text">
+                <p>Ejercicios combinados de CSS Grid y Flexbox para construir layouts reales y responsivos.</p>
+                <p>Clave: <b>Grid</b> para estructura bidimensional — <b>Flexbox</b> para alineación interna de componentes.</p>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 1 — NAVBAR RESPONSIVA (FLEXBOX)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 1</span>
+                <span class="gl-block-title">NAVBAR RESPONSIVA</span>
+                <span class="gl-badge badge-flex">FLEXBOX</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+/* mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-menu { flex-wrap: wrap; }
+  .cta { width: 100%; }
+}</pre>
+                    <div class="gl-key-list">
+                        <span>✓ display: flex en .navbar</span>
+                        <span>✓ align-items: center</span>
+                        <span>✓ justify-content: space-between</span>
+                        <span>✓ Menú como flex row con gap</span>
+                        <span>✓ Mobile: flex-direction: column</span>
+                        <span>✓ RETO: :hover en links y botón</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <nav class="demo-navbar">
+                        <span class="demo-logo">[ LEGANS ]</span>
+                        <ul class="demo-menu">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <button class="demo-btn-cta">CONTACT</button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 2 — GALERÍA DE CURSOS (GRID)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 2</span>
+                <span class="gl-block-title">GALERÍA DE CURSOS</span>
+                <span class="gl-badge badge-grid">GRID</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.courses {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(220px, 1fr)
+    );
+  gap: 15px;
+}</pre>
+                    <div class="gl-key-list">
+                        <span>✓ display: grid</span>
+                        <span>✓ auto-fit + minmax(220px, 1fr)</span>
+                        <span>✓ gap para separación de tarjetas</span>
+                        <span>✓ Responsivo sin media queries</span>
+                        <span>✓ RETO: agregar 6 cursos más</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <div class="demo-courses">
+                        <div class="demo-course-card">
+                            <div class="demo-cc-thumb">HTML</div>
+                            <p class="demo-cc-name">HTML Básico</p>
+                            <p class="demo-cc-sub">12 lecciones</p>
+                        </div>
+                        <div class="demo-course-card">
+                            <div class="demo-cc-thumb">CSS</div>
+                            <p class="demo-cc-name">CSS Avanzado</p>
+                            <p class="demo-cc-sub">18 lecciones</p>
+                        </div>
+                        <div class="demo-course-card">
+                            <div class="demo-cc-thumb">JS</div>
+                            <p class="demo-cc-name">JavaScript</p>
+                            <p class="demo-cc-sub">24 lecciones</p>
+                        </div>
+                        <div class="demo-course-card">
+                            <div class="demo-cc-thumb">GD</div>
+                            <p class="demo-cc-name">Grid + Flex</p>
+                            <p class="demo-cc-sub">7 ejercicios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 3 — TARJETA DE PRODUCTO (GRID + FLEX)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 3</span>
+                <span class="gl-block-title">TARJETA DE PRODUCTO</span>
+                <span class="gl-badge badge-both">GRID + FLEX</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.products {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+}
+.product {
+  display: flex;
+  flex-direction: column;
+}
+.product-content {
+  flex: 1; /* empuja footer */
+}
+.product-footer {
+  display: flex;
+  justify-content:
+    space-between;
+}</pre>
+                    <div class="gl-key-list">
+                        <span>✓ Grid en contenedor externo</span>
+                        <span>✓ Flex column en cada tarjeta</span>
+                        <span>✓ flex: 1 empuja footer abajo</span>
+                        <span>✓ space-between en footer</span>
+                        <span>✓ RETO: tarjeta destacada span 2</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <div class="demo-products">
+                        <div class="demo-product">
+                            <div class="demo-product-img">
+                                <img src="media/Imagenes/grid/gato css.jpg" alt="producto">
+                            </div>
+                            <div class="demo-product-content">
+                                <p class="demo-product-name">Cat CSS</p>
+                                <p class="demo-product-desc">Aprende a domar el cascading con ejemplos reales.</p>
+                            </div>
+                            <div class="demo-product-footer">
+                                <span class="demo-price">$29</span>
+                                <button class="demo-buy-btn">BUY</button>
+                            </div>
+                        </div>
+                        <div class="demo-product">
+                            <div class="demo-product-img">
+                                <img src="media/Imagenes/grid/dog grid.jpg" alt="producto">
+                            </div>
+                            <div class="demo-product-content">
+                                <p class="demo-product-name">Doge Grid</p>
+                                <p class="demo-product-desc">Layouts bidimensionales explicados paso a paso.</p>
+                            </div>
+                            <div class="demo-product-footer">
+                                <span class="demo-price">$35</span>
+                                <button class="demo-buy-btn">BUY</button>
+                            </div>
+                        </div>
+                        <div class="demo-product">
+                            <div class="demo-product-img">
+                                <img src="media/Imagenes/grid/panda js.jpg" alt="producto">
+                            </div>
+                            <div class="demo-product-content">
+                                <p class="demo-product-name">Panda JS</p>
+                                <p class="demo-product-desc">JavaScript para el frontend moderno y responsivo.</p>
+                            </div>
+                            <div class="demo-product-footer">
+                                <span class="demo-price">$45</span>
+                                <button class="demo-buy-btn">BUY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 4 — DASHBOARD CON GRID AREAS (GRID)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 4</span>
+                <span class="gl-block-title">DASHBOARD — GRID AREAS</span>
+                <span class="gl-badge badge-grid">GRID</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.dashboard {
+  display: grid;
+  grid-template-columns:
+    240px 1fr;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+}
+.header  { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main    { grid-area: main; }
+.footer  { grid-area: footer; }</pre>
+                    <div class="gl-key-list">
+                        <span>✓ grid-template-areas nombradas</span>
+                        <span>✓ Columna fija 240px + fluida 1fr</span>
+                        <span>✓ Header y footer full-width</span>
+                        <span>✓ Flex en sidebar para links</span>
+                        <span>✓ Grid responsivo en .stats</span>
+                        <span>✓ RETO: sidebar minmax(180,260)</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <div class="demo-dashboard">
+                        <header class="demo-d-header">
+                            <span>[ DASHBOARD ]</span>
+                            <span>usuario: legans</span>
+                        </header>
+                        <aside class="demo-d-sidebar">
+                            <p class="demo-d-sidebar-title">MENU</p>
+                            <a href="#">> Inicio</a>
+                            <a href="#">> Proyectos</a>
+                            <a href="#">> Stats</a>
+                            <a href="#">> Config</a>
+                        </aside>
+                        <main class="demo-d-main">
+                            <div class="demo-d-stats">
+                                <div class="demo-stat">VISITAS<br><b>1,204</b></div>
+                                <div class="demo-stat">POSTS<br><b>47</b></div>
+                                <div class="demo-stat">LIKES<br><b>893</b></div>
+                            </div>
+                        </main>
+                        <footer class="demo-d-footer">v0.8 // LEGANS BLOG // 2024</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 5 — FORMULARIO PROFESIONAL (GRID + FLEX)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 5</span>
+                <span class="gl-block-title">FORMULARIO PROFESIONAL</span>
+                <span class="gl-badge badge-both">GRID + FLEX</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.form {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+  gap: 12px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field.full,
+.actions.full {
+  grid-column: 1 / -1;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}</pre>
+                    <div class="gl-key-list">
+                        <span>✓ Grid 2 columnas iguales</span>
+                        <span>✓ Flex column en cada .field</span>
+                        <span>✓ grid-column: 1 / -1 para .full</span>
+                        <span>✓ Botones alineados a la derecha</span>
+                        <span>✓ Mobile: una sola columna</span>
+                        <span>✓ RETO: campo Teléfono</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <form class="demo-form" onsubmit="return false;">
+                        <div class="demo-field">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Tu nombre">
+                        </div>
+                        <div class="demo-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="tu@email.com">
+                        </div>
+                        <div class="demo-field demo-full">
+                            <label>Mensaje</label>
+                            <textarea placeholder="Escribe aquí..." rows="3"></textarea>
+                        </div>
+                        <div class="demo-actions demo-full">
+                            <button type="reset" class="demo-form-btn btn-secondary">LIMPIAR</button>
+                            <button type="submit" class="demo-form-btn btn-primary">ENVIAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 6 — TABLERO KANBAN (GRID + FLEX)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 6</span>
+                <span class="gl-block-title">TABLERO KANBAN</span>
+                <span class="gl-badge badge-both">GRID + FLEX</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.kanban {
+  display: grid;
+  grid-template-columns:
+    repeat(3, 1fr);
+  gap: 12px;
+}
+.kanban-col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.task {
+  border: 2px solid #000;
+  padding: 8px;
+  background: #fff;
+}</pre>
+                    <div class="gl-key-list">
+                        <span>✓ 3 columnas iguales con Grid</span>
+                        <span>✓ Flex column en cada columna</span>
+                        <span>✓ gap para separar tarjetas</span>
+                        <span>✓ .task estilizadas con borde</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <div class="demo-kanban">
+                        <div class="demo-kanban-col">
+                            <div class="demo-kanban-head">TODO</div>
+                            <div class="demo-task">Diseñar navbar</div>
+                            <div class="demo-task">Crear galería</div>
+                            <div class="demo-task">Hero section</div>
+                        </div>
+                        <div class="demo-kanban-col">
+                            <div class="demo-kanban-head">IN PROGRESS</div>
+                            <div class="demo-task demo-task-active">Formulario CSS</div>
+                            <div class="demo-task demo-task-active">Dashboard</div>
+                        </div>
+                        <div class="demo-kanban-col">
+                            <div class="demo-kanban-head">DONE</div>
+                            <div class="demo-task demo-task-done">Flexbox</div>
+                            <div class="demo-task demo-task-done">Variables CSS</div>
+                            <div class="demo-task demo-task-done">Reset CSS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             EJ. 7 — SECCIÓN HERO (GRID + FLEX)
+             ================================================================ -->
+        <div class="gl-block manga-box">
+            <div class="gl-block-header">
+                <span class="gl-block-num">EJ. 7</span>
+                <span class="gl-block-title">SECCIÓN HERO</span>
+                <span class="gl-badge badge-both">GRID + FLEX</span>
+            </div>
+            <div class="gl-block-body">
+                <div class="gl-code-col">
+                    <pre class="gl-code">.hero {
+  display: grid;
+  grid-template-columns:
+    1fr 1fr;
+  align-items: center;
+  min-height: 300px;
+  gap: 20px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</pre>
+                    <div class="gl-key-list">
+                        <span>✓ Grid 2 columnas 50/50</span>
+                        <span>✓ align-items: center en grid</span>
+                        <span>✓ Flex column para zona de texto</span>
+                        <span>✓ Imagen centrada con Flex</span>
+                        <span>✓ Mobile: una sola columna</span>
+                    </div>
+                </div>
+                <div class="gl-demo-col">
+                    <p class="gl-demo-label">// demo live</p>
+                    <div class="demo-hero">
+                        <div class="demo-hero-text">
+                            <h3 class="demo-hero-title">[ BIENVENIDO<br>AL BLOG ]</h3>
+                            <p class="demo-hero-desc">CSS Grid y Flexbox trabajando juntos para construir layouts profesionales y responsivos.</p>
+                            <button class="demo-hero-btn">VER TRABAJOS →</button>
+                        </div>
+                        <div class="demo-hero-img">
+                            <img src="media/Imagenes/grid/hero.jpg" alt="Hero">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================================================
+             RESUMEN — IDEA CLAVE
+             ================================================================ -->
+        <div class="gl-summary manga-box">
+            <h2>// IDEA CLAVE A RECORDAR</h2>
+            <div class="gl-summary-grid">
+                <div class="gl-summary-card">
+                    <span class="gl-sum-tag">FLEXBOX</span>
+                    <p>Menús, alineación interna, una sola dirección. Para componentes lineales y alineación dentro de un eje.</p>
+                </div>
+                <div class="gl-summary-card">
+                    <span class="gl-sum-tag">GRID</span>
+                    <p>Estructuras de página, galerías, formularios, layouts bidimensionales con filas y columnas simultáneas.</p>
+                </div>
+                <div class="gl-summary-card">
+                    <span class="gl-sum-tag">JUNTOS</span>
+                    <p>En proyectos reales <b>se usan juntos</b>: Grid para el layout externo y Flexbox para organizar el contenido dentro de cada componente.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="gl-footer-nav">
+            <a href="index.html" class="gl-btn-return">[← VOLVER A INDEX.HTML]</a>
+            <a href="flexbox.html" class="gl-btn-return">[→ VER FLEXBOX.EXE]</a>
+        </div>
+
+    </main>
+
+</div><!-- /.wrapper -->
+
+</body>
+</html>

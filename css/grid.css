@@ -1,0 +1,855 @@
+/* ============================================================
+   GRID.CSS — LEGANS BLOG
+   Estilos exclusivos de grid.html.
+   Requiere: global.css
+   ============================================================
+
+   1.  Wrapper & estructura
+   2.  Banner
+   3.  Intro / metadata
+   4.  Bloques de ejercicio
+   5.  Columna de código
+   6.  Demo: Navbar
+   7.  Demo: Galería de cursos
+   8.  Demo: Tarjetas de producto
+   9.  Demo: Dashboard
+   10. Demo: Formulario
+   11. Demo: Kanban
+   12. Demo: Hero
+   13. Resumen & Footer nav
+   14. Media Queries
+
+   ============================================================ */
+
+
+/* ============================================================
+   1. WRAPPER & ESTRUCTURA
+   ============================================================ */
+
+.wrapper-grid {
+    margin-top: 20px;
+}
+
+.header-grid {
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.main-grid {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+
+/* ============================================================
+   2. BANNER
+   ============================================================ */
+
+.gl-banner {
+    width: 100%;
+    background-color: var(--bg-color);
+    border-bottom: 3px solid var(--border-color);
+    padding: 20px 25px 15px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.gl-banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.gl-banner-sub {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+}
+
+
+/* ============================================================
+   3. INTRO / METADATA
+   ============================================================ */
+
+.gl-intro {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed var(--border-color);
+}
+
+.gl-tag {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.tag-curso { background-color: #000; }
+.tag-tipo  { background-color: #555; }
+.tag-num   { background-color: #222; }
+
+.gl-intro-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.gl-intro-text p {
+    margin-bottom: 6px;
+}
+
+
+/* ============================================================
+   4. BLOQUES DE EJERCICIO
+   ============================================================ */
+
+.gl-block {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gl-block-header {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: -10px -10px 15px;
+}
+
+.gl-block-num {
+    font-size: 0.7rem;
+    font-weight: bold;
+    opacity: 0.65;
+    white-space: nowrap;
+}
+
+.gl-block-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1;
+}
+
+.gl-badge {
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 2px 7px;
+    border: 1px solid rgba(255,255,255,0.5);
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.badge-flex { background-color: #444; }
+.badge-grid { background-color: #000; }
+.badge-both { background-color: #222; }
+
+.gl-block-body {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.gl-demo-label {
+    font-size: 0.65rem;
+    color: #888;
+    font-family: "Courier New", monospace;
+    margin-bottom: 6px;
+}
+
+
+/* ============================================================
+   5. COLUMNA DE CÓDIGO
+   ============================================================ */
+
+.gl-code-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gl-code {
+    background: #f5f5f5;
+    border: 2px solid var(--border-color);
+    padding: 10px 12px;
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    line-height: 1.6;
+    color: #000;
+    white-space: pre;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.gl-key-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.68rem;
+    font-family: "Courier New", monospace;
+    color: #444;
+    border-left: 3px solid var(--border-color);
+    padding-left: 8px;
+}
+
+
+/* ============================================================
+   6. DEMO: NAVBAR
+   ============================================================ */
+
+.demo-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--border-color);
+    padding: 8px 12px;
+    background: #fff;
+    box-shadow: 4px 4px 0px var(--border-color);
+}
+
+.demo-logo {
+    font-family: "Courier New", monospace;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.demo-menu {
+    list-style: none;
+    display: flex;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-menu li a {
+    font-size: 0.75rem;
+    font-family: "Courier New", monospace;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.15s, text-decoration 0.15s;
+}
+
+.demo-menu li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.demo-btn-cta {
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.demo-btn-cta:hover {
+    background-color: #333;
+}
+
+
+/* ============================================================
+   7. DEMO: GALERÍA DE CURSOS
+   ============================================================ */
+
+.demo-courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 8px;
+}
+
+.demo-course-card {
+    border: 2px solid var(--border-color);
+    padding: 8px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 3px 3px 0px var(--border-color);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.demo-course-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.demo-cc-thumb {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.demo-cc-name {
+    font-size: 0.68rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    margin-bottom: 2px;
+}
+
+.demo-cc-sub {
+    font-size: 0.58rem;
+    color: #777;
+    font-family: "Courier New", monospace;
+}
+
+
+/* ============================================================
+   8. DEMO: TARJETAS DE PRODUCTO
+   ============================================================ */
+
+.demo-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.demo-product {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid var(--border-color);
+    background: #fff;
+    box-shadow: 3px 3px 0px var(--border-color);
+    overflow: hidden;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.demo-product:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #000;
+}
+
+.demo-product-img {
+    height: 72px;
+    overflow: hidden;
+    border-bottom: 2px solid var(--border-color);
+    background: #eee;
+    flex-shrink: 0;
+}
+
+.demo-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(120%);
+    display: block;
+}
+
+.demo-product-content {
+    flex: 1;
+    padding: 6px 8px;
+}
+
+.demo-product-name {
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    margin-bottom: 3px;
+}
+
+.demo-product-desc {
+    font-size: 0.6rem;
+    color: #555;
+    font-family: "Courier New", monospace;
+    line-height: 1.35;
+}
+
+.demo-product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 8px;
+    border-top: 2px solid var(--border-color);
+    background: #f5f5f5;
+    flex-shrink: 0;
+}
+
+.demo-price {
+    font-size: 0.78rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+}
+
+.demo-buy-btn {
+    font-family: "Courier New", monospace;
+    font-size: 0.58rem;
+    font-weight: bold;
+    padding: 3px 7px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.demo-buy-btn:hover {
+    background-color: #333;
+}
+
+
+/* ============================================================
+   9. DEMO: DASHBOARD
+   ============================================================ */
+
+.demo-dashboard {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header  header"
+        "sidebar main"
+        "footer  footer";
+    border: 2px solid var(--border-color);
+    height: 210px;
+    overflow: hidden;
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    box-shadow: 4px 4px 0px var(--border-color);
+}
+
+.demo-d-header {
+    grid-area: header;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.68rem;
+    font-weight: bold;
+}
+
+.demo-d-sidebar {
+    grid-area: sidebar;
+    border-right: 2px solid var(--border-color);
+    padding: 7px 6px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: hidden;
+}
+
+.demo-d-sidebar-title {
+    font-weight: bold;
+    font-size: 0.6rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+}
+
+.demo-d-sidebar a {
+    font-size: 0.58rem;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+    transition: color 0.1s;
+}
+
+.demo-d-sidebar a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.demo-d-main {
+    grid-area: main;
+    padding: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.demo-d-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.demo-stat {
+    border: 2px solid var(--border-color);
+    padding: 6px 4px;
+    text-align: center;
+    font-size: 0.58rem;
+    background: #fafafa;
+    box-shadow: 2px 2px 0px var(--border-color);
+    line-height: 1.3;
+}
+
+.demo-stat b {
+    display: block;
+    font-size: 0.95rem;
+    margin-top: 3px;
+}
+
+.demo-d-footer {
+    grid-area: footer;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 4px 10px;
+    font-size: 0.58rem;
+    text-align: center;
+}
+
+
+/* ============================================================
+   10. DEMO: FORMULARIO
+   ============================================================ */
+
+.demo-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.demo-field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.demo-field label {
+    font-size: 0.68rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    color: #333;
+}
+
+.demo-field input,
+.demo-field textarea {
+    padding: 5px 8px;
+    border: 2px solid var(--border-color);
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    background: #fafafa;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.demo-field input:focus,
+.demo-field textarea:focus {
+    border-color: #000;
+    background: #fff;
+}
+
+.demo-full {
+    grid-column: 1 / -1;
+}
+
+.demo-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.demo-form-btn {
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #444;
+}
+
+.btn-secondary:hover {
+    background: #eee;
+}
+
+.btn-primary {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.btn-primary:hover {
+    background: #333;
+}
+
+
+/* ============================================================
+   11. DEMO: KANBAN
+   ============================================================ */
+
+.demo-kanban {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.demo-kanban-col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid var(--border-color);
+    padding: 6px;
+    background: #fafafa;
+    min-height: 130px;
+}
+
+.demo-kanban-head {
+    font-size: 0.6rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 3px 6px;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.demo-task {
+    border: 2px solid var(--border-color);
+    padding: 5px 6px;
+    font-size: 0.62rem;
+    font-family: "Courier New", monospace;
+    background: #fff;
+    box-shadow: 2px 2px 0px #ccc;
+    transition: transform 0.1s, box-shadow 0.1s;
+    cursor: default;
+}
+
+.demo-task:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px #888;
+}
+
+.demo-task-active {
+    border-left: 4px solid #000;
+    background: #fffde7;
+}
+
+.demo-task-done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+
+/* ============================================================
+   12. DEMO: HERO
+   ============================================================ */
+
+.demo-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid var(--border-color);
+    padding: 15px;
+    background: #fff;
+    min-height: 170px;
+    box-shadow: 4px 4px 0px var(--border-color);
+}
+
+.demo-hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.demo-hero-title {
+    font-size: 1.05rem;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.demo-hero-desc {
+    font-size: 0.68rem;
+    font-family: "Courier New", monospace;
+    color: #444;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.demo-hero-btn {
+    display: inline-block;
+    font-family: "Courier New", monospace;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.15s;
+}
+
+.demo-hero-btn:hover {
+    background-color: #333;
+}
+
+.demo-hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 140px;
+    border: 2px solid var(--border-color);
+}
+
+.demo-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(130%);
+    display: block;
+}
+
+
+/* ============================================================
+   13. RESUMEN & FOOTER NAV
+   ============================================================ */
+
+.gl-summary {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.gl-summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.4fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.gl-summary-card {
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 3px 3px 0px var(--border-color);
+}
+
+.gl-sum-tag {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    align-self: flex-start;
+    letter-spacing: 1px;
+}
+
+.gl-summary-card p {
+    font-size: 0.73rem;
+    font-family: "Courier New", monospace;
+    color: #333;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.gl-footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 10px 10px;
+    flex-wrap: wrap;
+}
+
+.gl-btn-return {
+    display: inline-block;
+    padding: 6px 14px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border: 2px solid var(--border-color);
+    transition: background 0.15s, color 0.15s;
+}
+
+.gl-btn-return:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+
+/* ============================================================
+   14. MEDIA QUERIES
+   ============================================================ */
+
+@media (max-width: 800px) {
+    .gl-block-body {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gl-summary-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .gl-banner-title {
+        font-size: 1.4rem;
+    }
+
+    .demo-dashboard {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        height: auto;
+    }
+
+    .demo-d-sidebar {
+        display: none;
+    }
+
+    .demo-products {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-hero-img {
+        height: 100px;
+    }
+
+    .gl-summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-kanban {
+        grid-template-columns: 1fr;
+    }
+}
